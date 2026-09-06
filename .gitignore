@@ -1,0 +1,63 @@
+# Stray Unity project at the repo root (left behind by an early Unity license check; the real
+# project is in unity/). Ignored rather than deleted.
+/Assets/
+/Library/
+/Packages/
+/ProjectSettings/
+/UserSettings/
+/Temp/
+/obj/
+
+# Extracted stock game assets: local reference only, never redistribute.
+# Regenerate with tools\extract_reference.py (meshes, textures, materials, hierarchies, animation),
+# tools\vo_transcribe.py / vo_gerbal.py (audio) and the video/gif extraction in tools\.
+reference/meshes/
+reference/textures/
+reference/materials/
+reference/hierarchies/
+reference/animation/
+reference/audio/
+reference/videos/
+reference/gifs/
+
+# Downloaded third-party tool binaries (download links in tools/README.md);
+# tools/sdk/redux-sdk-cli.exe is kept in the repo through Git LFS.
+tools/vgmstream/
+tools/wwiser/
+
+# Python
+tools/venv/
+__pycache__/
+*.pyc
+
+# Unity project (created by the Redux SDK Manager, lives in unity/). unity/.gitignore additionally
+# excludes the imported game (Packages/KSP2_x64, Assets/StreamingAssets, Redux/, ksp2.catalog).
+unity/Library/
+unity/Temp/
+unity/Logs/
+unity/obj/
+unity/UserSettings/
+unity/Deploy/
+unity/*.csproj
+unity/*.sln
+unity/Packages/KSP2_x64/
+unity/Assets/Mods/__Testing/
+unity/Assets/ThunderKitSettings/Logs/
+logs/
+blender/*.blend1
+
+# Build output
+mod/**/bin/
+mod/**/obj/
+*.zip
+
+# Audio work files
+audio/wwise/**/.cache/
+audio/wwise/**/GeneratedSoundBanks/
+audio/raw/
+
+# Editors / OS
+.vs/
+.idea/
+Thumbs.db
+.DS_Store

@@ -1,0 +1,1172 @@
+{
+ "Play_u_amb_fuel_methane_2v": {
+  "id": 2420458135,
+  "guid": "148DCC12-5799-4CD9-B9F6-5AB9E375ADA5",
+  "bundle": "02a81640bb689b639ad74d37af7d291a.bundle",
+  "kind": "148DCC12-5799-4CD9-B9F6-5AB9E375ADA5"
+ },
+ "Play_A_explosion_v_00": {
+  "id": 3497769443,
+  "guid": "7D6EE946-39A1-4C20-AB0E-E2798609D371",
+  "bundle": "04167858792342ee9c97667efe52bdc0.bundle",
+  "kind": "7D6EE946-39A1-4C20-AB0E-E2798609D371"
+ },
+ "Play_decouple_non_decouplers": {
+  "id": 1814023842,
+  "guid": "07320627-DBA4-4539-83BA-378C299D4EB9",
+  "bundle": "065e57259bb45831bc48a78f4cb0fd25.bundle",
+  "kind": "07320627-DBA4-4539-83BA-378C299D4EB9"
+ },
+ "biome_metal_planet": {
+  "id": 461728448,
+  "guid": "2BB064D1-ADA1-4DF9-840C-5C4A2BE1618F",
+  "bundle": "0684e1d197f07317221dbd00355ea6e8.bundle",
+  "kind": "2BB064D1-ADA1-4DF9-840C-5C4A2BE1618F"
+ },
+ "Play_u_amb_structural_0v": {
+  "id": 614850173,
+  "guid": "519C6F09-FA1A-4E85-BED7-80F146721738",
+  "bundle": "0729b930768aa6124161350d025af6ac.bundle",
+  "kind": "519C6F09-FA1A-4E85-BED7-80F146721738"
+ },
+ "Play_u_amb_fuel_methane_0v_stop": {
+  "id": 1301500096,
+  "guid": "DDDBE804-FB34-4554-BBA7-DC6530D39F59",
+  "bundle": "087d3ab97287dc60940ddd2a44f79f4f.bundle",
+  "kind": "DDDBE804-FB34-4554-BBA7-DC6530D39F59"
+ },
+ "Play_u_ENGINE_methalox_1v_Vector": {
+  "id": 4022254919,
+  "guid": "9F1FC9E7-4A1F-439E-8655-0F6396AAEA7E",
+  "bundle": "08caaa8038e762157858baee855569a4.bundle",
+  "kind": "9F1FC9E7-4A1F-439E-8655-0F6396AAEA7E"
+ },
+ "Play_u_ENGINE_methalox_1v_Vector_stop": {
+  "id": 2937701186,
+  "guid": "95E2194C-66B5-435E-8B5E-352D6DBF0C6C",
+  "bundle": "08caaa8038e762157858baee855569a4.bundle",
+  "kind": "95E2194C-66B5-435E-8B5E-352D6DBF0C6C"
+ },
+ "Play_u_amb_fairings_1v": {
+  "id": 2725321290,
+  "guid": "1DE37F3C-965C-4C31-B49E-5F7EF82E8C48",
+  "bundle": "0a6ed537e79b70130cbd0fcf403eea50.bundle",
+  "kind": "1DE37F3C-965C-4C31-B49E-5F7EF82E8C48"
+ },
+ "Play_u_amb_parachutes_0v": {
+  "id": 1099884362,
+  "guid": "3AC0613E-FBBE-4216-B125-7CB7C7A36373",
+  "bundle": "0ce7ef382dba9247d325575225aba1ef.bundle",
+  "kind": "3AC0613E-FBBE-4216-B125-7CB7C7A36373"
+ },
+ "Play_u_ENGINE_methane_1v_panther_turobofan_stop": {
+  "id": 1288701008,
+  "guid": "8FFDEF6B-8D77-439C-8BC5-9EA1AAF16725",
+  "bundle": "0f63d6d8a205083e79263552d26c548b.bundle",
+  "kind": "8FFDEF6B-8D77-439C-8BC5-9EA1AAF16725"
+ },
+ "Play_u_ENGINE_methane_1v_panther_turobofan_stop_mode2": {
+  "id": 2650540504,
+  "guid": "E9977008-AD0D-4475-9AB1-1991C686D2F1",
+  "bundle": "0f63d6d8a205083e79263552d26c548b.bundle",
+  "kind": "E9977008-AD0D-4475-9AB1-1991C686D2F1"
+ },
+ "Play_u_ENGINE_methane_1v_panther_turobofan": {
+  "id": 4225889789,
+  "guid": "591933A2-48B4-415C-A172-F2EEB4D66183",
+  "bundle": "0f63d6d8a205083e79263552d26c548b.bundle",
+  "kind": "591933A2-48B4-415C-A172-F2EEB4D66183"
+ },
+ "Play_u_ENGINE_methane_1v_panther_turobofan_mode2": {
+  "id": 4006273129,
+  "guid": "F05162E2-1F4F-4ADC-81F9-57162F0F418E",
+  "bundle": "0f63d6d8a205083e79263552d26c548b.bundle",
+  "kind": "F05162E2-1F4F-4ADC-81F9-57162F0F418E"
+ },
+ "Play_engine_change_to_mode_2": {
+  "id": 669223254,
+  "guid": "451862AB-58B0-4597-BE57-513F0ECB44DD",
+  "bundle": "0f710c0161a99388eee8985be24f7fe3.bundle",
+  "kind": "451862AB-58B0-4597-BE57-513F0ECB44DD"
+ },
+ "Play_u_amb_fuel_methalox1v": {
+  "id": 3544546577,
+  "guid": "0F7ED434-E1C1-4C90-8F18-15EDBE4ADC83",
+  "bundle": "10d56d0dc8dab0ed8e784b397d205bfd.bundle",
+  "kind": "0F7ED434-E1C1-4C90-8F18-15EDBE4ADC83"
+ },
+ "Play_parachutes_cut": {
+  "id": 3951491055,
+  "guid": "98330489-8C03-4782-BEAF-172C0F732B43",
+  "bundle": "11a727d73d588c9a513fc39c70426564.bundle",
+  "kind": "98330489-8C03-4782-BEAF-172C0F732B43"
+ },
+ "Play_A_explosion_v_02": {
+  "id": 3497769441,
+  "guid": "FB3F9F54-A449-45DA-9D7F-4728459A6607",
+  "bundle": "11a97f71e8e6ba4b33f2e7e352e08f07.bundle",
+  "kind": "FB3F9F54-A449-45DA-9D7F-4728459A6607"
+ },
+ "Play_u_amb_methalox_3v_stop": {
+  "id": 651412866,
+  "guid": "34CBD93F-7FBA-4D8C-B106-B2AD821155E8",
+  "bundle": "128f06955dcfc4225cbd41c1f7c8d7c8.bundle",
+  "kind": "34CBD93F-7FBA-4D8C-B106-B2AD821155E8"
+ },
+ "Play_u_amb_fuel_methalox0v": {
+  "id": 3527768994,
+  "guid": "400E56E1-7E94-4DD3-B9C0-86CA9F81C944",
+  "bundle": "13034d5a6a1f0a3b7dcc811f13feb3cf.bundle",
+  "kind": "400E56E1-7E94-4DD3-B9C0-86CA9F81C944"
+ },
+ "Play_Command_explode": {
+  "id": 3073561279,
+  "guid": "9D047912-44B6-4432-A712-850EF5AB23D1",
+  "bundle": "179e2d516fa39b95b54d9967745c02ad.bundle",
+  "kind": "9D047912-44B6-4432-A712-850EF5AB23D1"
+ },
+ "Play_A_explosion_v_02_tank_methane": {
+  "id": 3308848785,
+  "guid": "4D130A2D-4146-44AA-B558-07BD09EC3227",
+  "bundle": "17dd22edd0182cbf19c3561ac0dae0fc.bundle",
+  "kind": "4D130A2D-4146-44AA-B558-07BD09EC3227"
+ },
+ "Play_u_amb_fuel_methalox2v_stop": {
+  "id": 915704123,
+  "guid": "71F983AD-201F-4998-94E4-FC99CF89268C",
+  "bundle": "17ea239b0a2e1ccac7fb9b27e4646842.bundle",
+  "kind": "71F983AD-201F-4998-94E4-FC99CF89268C"
+ },
+ "Play_u_amb_xeon_0v": {
+  "id": 929031600,
+  "guid": "9D560087-A08F-4683-9C1A-01454FB77DE1",
+  "bundle": "192298f0ec04b3a939c678d0ab2a55bb.bundle",
+  "kind": "9D560087-A08F-4683-9C1A-01454FB77DE1"
+ },
+ "Play_gimbal_OFF": {
+  "id": 1629877970,
+  "guid": "B313EE5C-1DE1-4304-90ED-E8C984721B06",
+  "bundle": "193c7e1564dc54ef5ad367baf58d6e33.bundle",
+  "kind": "B313EE5C-1DE1-4304-90ED-E8C984721B06"
+ },
+ "Play_decouple_separators": {
+  "id": 53943166,
+  "guid": "73ACA598-A64B-4B2E-B5C1-0E97CA1A68F0",
+  "bundle": "1a2e516eec8d4413445f2698ac738385.bundle",
+  "kind": "73ACA598-A64B-4B2E-B5C1-0E97CA1A68F0"
+ },
+ "Play_docking_connected": {
+  "id": 144885445,
+  "guid": "6D206D7D-CBA3-452A-B579-3D7F5B36750A",
+  "bundle": "1cbc8c9445ab7142ccaee971644d8ce2.bundle",
+  "kind": "6D206D7D-CBA3-452A-B579-3D7F5B36750A"
+ },
+ "Play_u_ENGINE_methane_0v_juno_Reverse": {
+  "id": 2906125320,
+  "guid": "C177EA96-E4B0-4A6A-8A9E-3FAC7AFFC045",
+  "bundle": "2011f28d47a47c4615656bfa39e28a6a.bundle",
+  "kind": "C177EA96-E4B0-4A6A-8A9E-3FAC7AFFC045"
+ },
+ "Play_u_ENGINE_methane_0v_juno": {
+  "id": 2333443983,
+  "guid": "6CDF96F0-69AE-45D2-A12B-A92F08E713AD",
+  "bundle": "2011f28d47a47c4615656bfa39e28a6a.bundle",
+  "kind": "6CDF96F0-69AE-45D2-A12B-A92F08E713AD"
+ },
+ "Play_u_ENGINE_methane_0v_juno_stop_Reverse": {
+  "id": 3401816253,
+  "guid": "E913CCE2-158D-478C-975C-66BA8FF19E82",
+  "bundle": "2011f28d47a47c4615656bfa39e28a6a.bundle",
+  "kind": "E913CCE2-158D-478C-975C-66BA8FF19E82"
+ },
+ "Play_A_explosion_v_03_tank_methalox": {
+  "id": 3741965250,
+  "guid": "82E4DBCE-B9F4-43CA-BC7A-8ADDEECE79BF",
+  "bundle": "216a0d63ab2ef3a65cca1a600a67724f.bundle",
+  "kind": "82E4DBCE-B9F4-43CA-BC7A-8ADDEECE79BF"
+ },
+ "Play_u_ENGINE_methalox_0v_twitch": {
+  "id": 2646574318,
+  "guid": "66047E80-D9F7-4548-A59C-7A1A90C6E6DA",
+  "bundle": "22465da1a531aec17418339f3274209b.bundle",
+  "kind": "66047E80-D9F7-4548-A59C-7A1A90C6E6DA"
+ },
+ "Play_u_ENGINE_methalox_0v_twitch_stop": {
+  "id": 2483348717,
+  "guid": "A22A0CDF-15BB-48B1-A9AB-AF59826CD66A",
+  "bundle": "22465da1a531aec17418339f3274209b.bundle",
+  "kind": "A22A0CDF-15BB-48B1-A9AB-AF59826CD66A"
+ },
+ "Play_u_amb_fuel_methalox1v_stop": {
+  "id": 2402365556,
+  "guid": "2535931E-AE15-43CF-AB20-4B6F64FA13B9",
+  "bundle": "237c411709d949b4113a322ff224bb94.bundle",
+  "kind": "2535931E-AE15-43CF-AB20-4B6F64FA13B9"
+ },
+ "Play_overheat_part_start": {
+  "id": 2292526379,
+  "guid": "D782D23E-862B-4E07-BB9C-3D74F50318A9",
+  "bundle": "249eafc1a3ca9d77fca4646d5c4c2ff1.bundle",
+  "kind": "D782D23E-862B-4E07-BB9C-3D74F50318A9"
+ },
+ "Play_u_amb_nosecone_2v_stop": {
+  "id": 259911539,
+  "guid": "57CCE29E-FE2D-4030-AB67-8620BCDD3EBD",
+  "bundle": "25810e68f9cc57828d0a2aa3adb2c487.bundle",
+  "kind": "57CCE29E-FE2D-4030-AB67-8620BCDD3EBD"
+ },
+ "biome_dirt": {
+  "id": 3733123101,
+  "guid": "FA6E48BE-838C-4DB9-983A-DBDFB2BE8F40",
+  "bundle": "2977106e0e9f7ca0a32d9cc5e81a4b46.bundle",
+  "kind": "FA6E48BE-838C-4DB9-983A-DBDFB2BE8F40"
+ },
+ "Play_u_ENGINE_methalox_1v_Swivel_stop": {
+  "id": 1043355049,
+  "guid": "F1E9F851-5096-49ED-91CE-A24F8A4A2567",
+  "bundle": "2bb289c0fb1a42e3f33f8048b6290082.bundle",
+  "kind": "F1E9F851-5096-49ED-91CE-A24F8A4A2567"
+ },
+ "Play_u_ENGINE_methalox_1v_Swivel": {
+  "id": 4126586458,
+  "guid": "597513CA-FBF5-4B22-A8CA-6AF2AE614B22",
+  "bundle": "2bb289c0fb1a42e3f33f8048b6290082.bundle",
+  "kind": "597513CA-FBF5-4B22-A8CA-6AF2AE614B22"
+ },
+ "Play_u_amb_fuel_methane_3v_stop": {
+  "id": 3325990519,
+  "guid": "2750ED1C-E089-4AD7-A619-892CE6511536",
+  "bundle": "2cac8ce93da2eb5268a8704976e1580e.bundle",
+  "kind": "2750ED1C-E089-4AD7-A619-892CE6511536"
+ },
+ "Play_u_ENGINE_methalox_2v_poodle": {
+  "id": 1546365510,
+  "guid": "131D8114-FC43-484A-94D7-A98CE944FB4B",
+  "bundle": "2d59b34cf3e68fafff6ca79ea5987226.bundle",
+  "kind": "131D8114-FC43-484A-94D7-A98CE944FB4B"
+ },
+ "Play_u_ENGINE_methalox_2v_poodle_stop": {
+  "id": 1424766229,
+  "guid": "5657AC61-0945-4B71-ACEA-86BB60020A0B",
+  "bundle": "2d59b34cf3e68fafff6ca79ea5987226.bundle",
+  "kind": "5657AC61-0945-4B71-ACEA-86BB60020A0B"
+ },
+ "Play_u_amb_fuel_metallichyrdogen_1v": {
+  "id": 3979132955,
+  "guid": "319BA8A4-AC57-4B4B-8FBF-B19BC7EA8287",
+  "bundle": "2d69a3d93a6477b7af2454d793d98f36.bundle",
+  "kind": "319BA8A4-AC57-4B4B-8FBF-B19BC7EA8287"
+ },
+ "Play_u_amb_command_stop": {
+  "id": 2647097923,
+  "guid": "D0F91FE1-EF43-43E8-AE1E-63DFC998E6A4",
+  "bundle": "2dc51c45c9e12cf046853320e0d5d0f5.bundle",
+  "kind": "D0F91FE1-EF43-43E8-AE1E-63DFC998E6A4"
+ },
+ "Play_u_amb_methalox_1v_stop": {
+  "id": 1814928656,
+  "guid": "95B68075-5410-4C19-B282-EA5C77B03151",
+  "bundle": "2e6a82afa6da64389d86e7abba11cbb2.bundle",
+  "kind": "95B68075-5410-4C19-B282-EA5C77B03151"
+ },
+ "Play_amb_vessel_emitter_Vessel_kerbal_Stop": {
+  "id": 3786974594,
+  "guid": "EE269280-F891-4063-9BF4-2F29537DFD7E",
+  "bundle": "2f338ffcdf43e83fcce2c5886067f865.bundle",
+  "kind": "EE269280-F891-4063-9BF4-2F29537DFD7E"
+ },
+ "Play_biome_collision_Grinding_loop_Stop": {
+  "id": 4289480256,
+  "guid": "4EEFF5B4-AF26-42C7-B59A-3D0E0FDBBD38",
+  "bundle": "313ab180f6a5e4cf812f79838c5b3e7c.bundle",
+  "kind": "4EEFF5B4-AF26-42C7-B59A-3D0E0FDBBD38"
+ },
+ "Play_wheels_colliding_loop_stop": {
+  "id": 1916761248,
+  "guid": "D0B62CB2-710C-40AE-A303-1D0E28ED88F4",
+  "bundle": "3468b46e30b0e1ed711a1ab5c8e45576.bundle",
+  "kind": "D0B62CB2-710C-40AE-A303-1D0E28ED88F4"
+ },
+ "Play_rcs_rocket_launch_STOP": {
+  "id": 158701140,
+  "guid": "6548AA92-E6BA-409A-9AA1-0274C6EAB712",
+  "bundle": "34c10b0d9570549b7ae19628419e88b4.bundle",
+  "kind": "6548AA92-E6BA-409A-9AA1-0274C6EAB712"
+ },
+ "Play_A_explosion_v_01_tank_monoprop": {
+  "id": 969530702,
+  "guid": "4CCCD870-9134-41B6-ADB5-B80D0F1E7747",
+  "bundle": "34c4cd49b339eb6fbd2bf49e3ac31c41.bundle",
+  "kind": "4CCCD870-9134-41B6-ADB5-B80D0F1E7747"
+ },
+ "Play_u_amb_wing_1v_stop": {
+  "id": 3308895329,
+  "guid": "8A9F08E8-9993-476D-A098-CE30DC9FC670",
+  "bundle": "36b10dbd08e82ab052f26bb599c728e2.bundle",
+  "kind": "8A9F08E8-9993-476D-A098-CE30DC9FC670"
+ },
+ "Play_A_explosion_v_02_tank_methalox": {
+  "id": 332101207,
+  "guid": "60C2AF32-D64F-4959-BBD2-6F4E7A836A00",
+  "bundle": "37b82bd5dfaca053d78a8af5a112164f.bundle",
+  "kind": "60C2AF32-D64F-4959-BBD2-6F4E7A836A00"
+ },
+ "Play_u_ENGINE_methalox_1v_Nerv_stop": {
+  "id": 3039158212,
+  "guid": "C8BDE4B1-D739-471C-9E61-630A837B27AF",
+  "bundle": "403b6852c86658f85a9369ea27424410.bundle",
+  "kind": "C8BDE4B1-D739-471C-9E61-630A837B27AF"
+ },
+ "Play_u_ENGINE_methalox_1v_Nerv": {
+  "id": 2744697473,
+  "guid": "332925AF-79BE-48B7-893C-A65231A8BD70",
+  "bundle": "403b6852c86658f85a9369ea27424410.bundle",
+  "kind": "332925AF-79BE-48B7-893C-A65231A8BD70"
+ },
+ "Play_wheel_break_stop": {
+  "id": 3601772834,
+  "guid": "8902B0C2-252D-41E5-80F0-5E6BC9967CCE",
+  "bundle": "40fa1f324e8f78c0637daaa29a9ebc6d.bundle",
+  "kind": "8902B0C2-252D-41E5-80F0-5E6BC9967CCE"
+ },
+ "Play_u_ENGINE_methalox_2v_Tuba": {
+  "id": 314185307,
+  "guid": "21E9787B-13F8-476E-90B4-C0E3159734CA",
+  "bundle": "4729fe517ca2d09a5f84598483659acc.bundle",
+  "kind": "21E9787B-13F8-476E-90B4-C0E3159734CA"
+ },
+ "Play_u_ENGINE_methalox_2v_Tuba_stop": {
+  "id": 2634714102,
+  "guid": "C0FE487A-F657-47B8-8672-2C29B1F758A4",
+  "bundle": "4729fe517ca2d09a5f84598483659acc.bundle",
+  "kind": "C0FE487A-F657-47B8-8672-2C29B1F758A4"
+ },
+ "Play_u_ENGINE_xeon_0v_dawn": {
+  "id": 1653780547,
+  "guid": "A1ED4AE5-B0B2-4141-8AC3-0ACAA67B31AA",
+  "bundle": "472b963b7a26f97fab1e245684fc6c20.bundle",
+  "kind": "A1ED4AE5-B0B2-4141-8AC3-0ACAA67B31AA"
+ },
+ "biome_grass": {
+  "id": 1448722224,
+  "guid": "2B572B74-C1D0-4C55-B81B-CBA3CE7E2B22",
+  "bundle": "4939664806acd0b9a59370383aae405f.bundle",
+  "kind": "2B572B74-C1D0-4C55-B81B-CBA3CE7E2B22"
+ },
+ "biome_wet": {
+  "id": 2856592714,
+  "guid": "28886D52-2978-453A-8EF0-495530EF5233",
+  "bundle": "4b3bfe40cf228a3699bc0b200f9e4526.bundle",
+  "kind": "28886D52-2978-453A-8EF0-495530EF5233"
+ },
+ "Play_gimbal_ON": {
+  "id": 2167680756,
+  "guid": "EB4B7E3E-AB96-43AE-98A3-D338A47C4CFD",
+  "bundle": "4bb2d60165146f17c9ab79f4113d0db0.bundle",
+  "kind": "EB4B7E3E-AB96-43AE-98A3-D338A47C4CFD"
+ },
+ "Play_decouple": {
+  "id": 813142635,
+  "guid": "2D1615CC-D858-4408-8E21-EBD31ABCAB7E",
+  "bundle": "4c80bb6e91c7c9d2240f3af7f221c085.bundle",
+  "kind": "2D1615CC-D858-4408-8E21-EBD31ABCAB7E"
+ },
+ "Play_A_explosion_v_03_tank_monoprop": {
+  "id": 1864306800,
+  "guid": "0D0F2337-0D97-45F0-9743-8D947A4F52D2",
+  "bundle": "4e4b18421dcc1203845d120eed9a009a.bundle",
+  "kind": "0D0F2337-0D97-45F0-9743-8D947A4F52D2"
+ },
+ "Play_u_amb_methalox_1v": {
+  "id": 3895603389,
+  "guid": "276148BB-31D6-4AD7-814C-861B5571CCBC",
+  "bundle": "4e7c15cb663a297534ebd54ffd06730f.bundle",
+  "kind": "276148BB-31D6-4AD7-814C-861B5571CCBC"
+ },
+ "Play_u_amb_intake_1v_stop": {
+  "id": 2714454544,
+  "guid": "9204C8C7-32C8-4F3A-89DB-6EB6529C0557",
+  "bundle": "4ea7d5b994588a8e7d60b1ccd4ba5859.bundle",
+  "kind": "9204C8C7-32C8-4F3A-89DB-6EB6529C0557"
+ },
+ "Play_u_amb_command": {
+  "id": 187872804,
+  "guid": "F452B673-C5DE-44DE-83F2-384A67CD9498",
+  "bundle": "5056c1e8596a5c4366443dbc15e9f0e6.bundle",
+  "kind": "F452B673-C5DE-44DE-83F2-384A67CD9498"
+ },
+ "Play_A_explosion_v_04_tank_hydrogen": {
+  "id": 283277113,
+  "guid": "C0FF5C82-1DEC-4A6D-843D-CB73378E72A8",
+  "bundle": "702025c98a20e5557997c97dd294989b.bundle",
+  "kind": "C0FF5C82-1DEC-4A6D-843D-CB73378E72A8"
+ },
+ "Play_light_OFF": {
+  "id": 4159858180,
+  "guid": "835CA825-CBA3-4195-B50B-832E2D9AC948",
+  "bundle": "51a8670ab81fb07aa5ff7d47e4512962.bundle",
+  "kind": "835CA825-CBA3-4195-B50B-832E2D9AC948"
+ },
+ "Play_A_explosion_v_00_tank_xenon": {
+  "id": 1674249441,
+  "guid": "659A7466-00BC-4B48-B3C8-FFCE7CAF1141",
+  "bundle": "51ce984290cbd21a4528dc4a3a79c28a.bundle",
+  "kind": "659A7466-00BC-4B48-B3C8-FFCE7CAF1141"
+ },
+ "Play_A_part_collision": {
+  "id": 2344966096,
+  "guid": "9F4A6D82-C197-4870-BCC0-4F9BA923A638",
+  "bundle": "521a54df572cf1a5361178f657776a9b.bundle",
+  "kind": "9F4A6D82-C197-4870-BCC0-4F9BA923A638"
+ },
+ "Play_u_amb_methane_0v": {
+  "id": 1945601672,
+  "guid": "107D95F3-FE34-4988-8068-CDBE5B9557FF",
+  "bundle": "53491bd95fb71894ed68614777be5e04.bundle",
+  "kind": "107D95F3-FE34-4988-8068-CDBE5B9557FF"
+ },
+ "Play_u_amb_methane_1v": {
+  "id": 1962379495,
+  "guid": "ADFF4B81-94CC-4698-ACFF-9BFC34D4A5D8",
+  "bundle": "54faa5396136d9bebe9e1d55f3137fa2.bundle",
+  "kind": "ADFF4B81-94CC-4698-ACFF-9BFC34D4A5D8"
+ },
+ "Play_resources_fuel_flow_OFF_to": {
+  "id": 3831047555,
+  "guid": "8C64999C-0189-4191-8BF4-ED3B99A5F635",
+  "bundle": "59c42080e7982be340cd077d91270912.bundle",
+  "kind": "8C64999C-0189-4191-8BF4-ED3B99A5F635"
+ },
+ "Play_A_explosion_v_02_tank_monoprop": {
+  "id": 3243155757,
+  "guid": "D9524C66-6C24-4A69-8F68-65D4BE01DF75",
+  "bundle": "5aa67f04d0013a992ca4d13503e4f110.bundle",
+  "kind": "D9524C66-6C24-4A69-8F68-65D4BE01DF75"
+ },
+ "size_v_02": {
+  "id": 1401078618,
+  "guid": "5308D199-5195-4165-8199-5D1DBE585F0C",
+  "bundle": "5cd0bcf8504592fa0c41f7d2dc662d70.bundle",
+  "kind": "5308D199-5195-4165-8199-5D1DBE585F0C"
+ },
+ "Play_Kerbal_part_collision_hit_VO": {
+  "id": 4265446274,
+  "guid": "5F554F50-D2DF-4DE5-830A-2055BDDAB2F7",
+  "bundle": "5d2a68a862c72f92df5e1f207ef87e91.bundle",
+  "kind": "5F554F50-D2DF-4DE5-830A-2055BDDAB2F7"
+ },
+ "Play_resources_fuel_flow_ON_from": {
+  "id": 1734591980,
+  "guid": "C61D72BF-CB56-4F9C-9147-B09BE2E50C81",
+  "bundle": "5d8d1170dfeb3834a3f440f32c3fc26d.bundle",
+  "kind": "C61D72BF-CB56-4F9C-9147-B09BE2E50C81"
+ },
+ "Play_u_amb_nosecone_2v": {
+  "id": 147897908,
+  "guid": "5170D66C-FBE7-4B86-B47D-F94F489B456E",
+  "bundle": "5e4e4103b0b90330756d8b1deb82ea70.bundle",
+  "kind": "5170D66C-FBE7-4B86-B47D-F94F489B456E"
+ },
+ "Play_u_amb_fuel_monoprop1v_stop": {
+  "id": 2347256174,
+  "guid": "1F65D419-D377-4644-A754-A08337CDBCD1",
+  "bundle": "5f0622843d82389ef0018cbe801dc277.bundle",
+  "kind": "1F65D419-D377-4644-A754-A08337CDBCD1"
+ },
+ "part_size_V": {
+  "id": 3630112629,
+  "guid": "AFF88F4E-4654-4E04-BDBF-9D943D57CF9B",
+  "bundle": "5f8e729c9c6ca3fbbdd13a7d9fd63e75.bundle",
+  "kind": "AFF88F4E-4654-4E04-BDBF-9D943D57CF9B"
+ },
+ "Play_u_ENGINE_methalox_2v_Labradoodle_stop": {
+  "id": 2004355985,
+  "guid": "DB1A2739-BAE0-459F-BDC9-01C9771B3382",
+  "bundle": "6261077fc76bfff7639eb7eea4b2fb5e.bundle",
+  "kind": "DB1A2739-BAE0-459F-BDC9-01C9771B3382"
+ },
+ "Play_u_ENGINE_methalox_2v_Labradoodle": {
+  "id": 1382854706,
+  "guid": "7EF1C236-22EC-40C8-AF8A-29BD57FC2566",
+  "bundle": "6261077fc76bfff7639eb7eea4b2fb5e.bundle",
+  "kind": "7EF1C236-22EC-40C8-AF8A-29BD57FC2566"
+ },
+ "Play_u_ENGINE_methalox_2v_Mainsail_stop": {
+  "id": 1861207504,
+  "guid": "79231F7D-E29D-4208-88D9-0CBA4C0474BA",
+  "bundle": "639dfc5890b1dafbdaf1feb676078ce3.bundle",
+  "kind": "79231F7D-E29D-4208-88D9-0CBA4C0474BA"
+ },
+ "Play_u_ENGINE_methalox_2v_Mainsail": {
+  "id": 4221081213,
+  "guid": "953EBBBC-A867-4DD6-8F25-52A5EC6F7585",
+  "bundle": "639dfc5890b1dafbdaf1feb676078ce3.bundle",
+  "kind": "953EBBBC-A867-4DD6-8F25-52A5EC6F7585"
+ },
+ "Play_u_amb_methalox_0v": {
+  "id": 3878825806,
+  "guid": "461D5A13-F7E8-4DC5-ACF4-89494C27D75A",
+  "bundle": "6492bc3068c1ca2a6462bbf9bd36289e.bundle",
+  "kind": "461D5A13-F7E8-4DC5-ACF4-89494C27D75A"
+ },
+ "biome_grassDried": {
+  "id": 1394500720,
+  "guid": "A5702027-A706-418E-A62C-8B188F29EEA5",
+  "bundle": "65a6b7db98fcf8d7c34ce69ebc1af3d2.bundle",
+  "kind": "A5702027-A706-418E-A62C-8B188F29EEA5"
+ },
+ "Play_u_ENGINE_methalox_1v_Trumpet_stop": {
+  "id": 1849458648,
+  "guid": "13625D94-8FE4-49A6-813C-04F162324059",
+  "bundle": "667a3f2279fed96265a1c035a292b3e1.bundle",
+  "kind": "13625D94-8FE4-49A6-813C-04F162324059"
+ },
+ "Play_u_ENGINE_methalox_1v_Trumpet": {
+  "id": 3067248949,
+  "guid": "E2ED797F-99FE-4409-84DF-5D46497783F3",
+  "bundle": "667a3f2279fed96265a1c035a292b3e1.bundle",
+  "kind": "E2ED797F-99FE-4409-84DF-5D46497783F3"
+ },
+ "Play_fairings_deploy": {
+  "id": 1122705519,
+  "guid": "126A5463-56F9-483B-AC27-E637ADEB1628",
+  "bundle": "671a5ef8cca6b9c4206370c13dd9fd77.bundle",
+  "kind": "126A5463-56F9-483B-AC27-E637ADEB1628"
+ },
+ "Play_A_explosion_v_01_tank_methalox": {
+  "id": 770341376,
+  "guid": "AFAE6988-260D-4ABE-B528-4CFC9C80CE04",
+  "bundle": "6773026a14f8d8a048cf6baec69c6e57.bundle",
+  "kind": "AFAE6988-260D-4ABE-B528-4CFC9C80CE04"
+ },
+ "Play_u_amb_fuel_monoprop3v": {
+  "id": 1441575737,
+  "guid": "E0341A92-5FC9-489E-BAD6-FAC80DD5B394",
+  "bundle": "67f5499e871d2074c2f30367f7e6b76e.bundle",
+  "kind": "E0341A92-5FC9-489E-BAD6-FAC80DD5B394"
+ },
+ "Play_u_amb_intake_1v": {
+  "id": 953155517,
+  "guid": "90A147C6-8A42-4B83-8093-63DF4675B129",
+  "bundle": "680fb49835b5e89e9a960b209b0b5adb.bundle",
+  "kind": "90A147C6-8A42-4B83-8093-63DF4675B129"
+ },
+ "Play_u_amb_boosters_1v": {
+  "id": 520597540,
+  "guid": "596694F0-91C5-4485-A480-F7E93B7B91E0",
+  "bundle": "698377898f33175d3add491850ae4735.bundle",
+  "kind": "596694F0-91C5-4485-A480-F7E93B7B91E0"
+ },
+ "biome_lava": {
+  "id": 1225151876,
+  "guid": "CE8A48AA-A9D1-45B4-AEB1-B61D95A6E030",
+  "bundle": "69d355d42ae56df78a7fdf32d1d7a5db.bundle",
+  "kind": "CE8A48AA-A9D1-45B4-AEB1-B61D95A6E030"
+ },
+ "Play_light_ON": {
+  "id": 816711006,
+  "guid": "4A2CD25F-DA86-4336-BA0B-C51BEF43EB69",
+  "bundle": "6b7708e89da932a79d870155c39e3e18.bundle",
+  "kind": "4A2CD25F-DA86-4336-BA0B-C51BEF43EB69"
+ },
+ "Play_wheels_colliding_loop": {
+  "id": 1820722029,
+  "guid": "888E1F3A-B54D-4C6B-9F9B-100A86F052B5",
+  "bundle": "6bb9dc01ab4b87506de495a6781406b7.bundle",
+  "kind": "888E1F3A-B54D-4C6B-9F9B-100A86F052B5"
+ },
+ "Play_engine_change_to_mode_1": {
+  "id": 669223253,
+  "guid": "5854D70E-4264-4B37-B519-98037C36289A",
+  "bundle": "6d560cb54caa16f52c43ad791b599045.bundle",
+  "kind": "5854D70E-4264-4B37-B519-98037C36289A"
+ },
+ "Play_u_amb_fuel_xenon_0v_stop": {
+  "id": 4202284990,
+  "guid": "DCDDC99C-5327-4F0D-AF17-83ECAD01713C",
+  "bundle": "6e0fa6e61710c07cb55c6890e072fd0f.bundle",
+  "kind": "DCDDC99C-5327-4F0D-AF17-83ECAD01713C"
+ },
+ "biome_ocean": {
+  "id": 1894811584,
+  "guid": "D6326DC2-A16C-45F7-8280-CE06BC171E30",
+  "bundle": "701b13a9bd45d12f688355c7f4e52684.bundle",
+  "kind": "D6326DC2-A16C-45F7-8280-CE06BC171E30"
+ },
+ "Play_u_ENGINE_boosters_1v_stop": {
+  "id": 2338673833,
+  "guid": "B95AEBCB-A6EC-4FE0-AC65-BA6DECB6E328",
+  "bundle": "72da68e358e4b40bda895fd36486ace4.bundle",
+  "kind": "B95AEBCB-A6EC-4FE0-AC65-BA6DECB6E328"
+ },
+ "Play_u_amb_fuel_methane_0v": {
+  "id": 2386902989,
+  "guid": "F69487B1-49A8-47E1-9ECB-47022A0AB17C",
+  "bundle": "741eaba9ea6e7868cbcdedc25754a7f9.bundle",
+  "kind": "F69487B1-49A8-47E1-9ECB-47022A0AB17C"
+ },
+ "Play_u_amb_fuel_methalox3v": {
+  "id": 3578102011,
+  "guid": "F2C964AA-71B9-4347-85C4-5E571F9123F2",
+  "bundle": "745a357af021db4d84700a15d41c73aa.bundle",
+  "kind": "F2C964AA-71B9-4347-85C4-5E571F9123F2"
+ },
+ "Play_u_amb_fuel_monoprop2v_stop": {
+  "id": 3133865977,
+  "guid": "4905CA1E-0B94-4FD1-BB7F-F1F57C3AC694",
+  "bundle": "76bcaeabde4ad661cb9e67f3167807be.bundle",
+  "kind": "4905CA1E-0B94-4FD1-BB7F-F1F57C3AC694"
+ },
+ "Play_u_amb_wing_1v": {
+  "id": 785512354,
+  "guid": "547A3C8A-CBB9-451F-B452-669205E04343",
+  "bundle": "776e5fa91a675df4131f2cc1cd7826c5.bundle",
+  "kind": "547A3C8A-CBB9-451F-B452-669205E04343"
+ },
+ "Play_u_amb_structural_0v_stop": {
+  "id": 1527094736,
+  "guid": "A4448ABB-515B-42F6-8857-92A128D09E70",
+  "bundle": "782e0d2041bddbb0314ce61f2bfb93dc.bundle",
+  "kind": "A4448ABB-515B-42F6-8857-92A128D09E70"
+ },
+ "Play_A_explosion_v_03_tank_hydrogen": {
+  "id": 2018883234,
+  "guid": "B159AB72-51EB-4AF5-805B-BD0D996CF915",
+  "bundle": "af37876bf29c42b2f1bd42dd157f30f3.bundle",
+  "kind": "B159AB72-51EB-4AF5-805B-BD0D996CF915"
+ },
+ "Play_parachutes_stowed": {
+  "id": 508833373,
+  "guid": "CAF259E4-D5D7-4C29-8561-7C2EBF6A0AF8",
+  "bundle": "79a2ab62f94726f708183404cfa28381.bundle",
+  "kind": "CAF259E4-D5D7-4C29-8561-7C2EBF6A0AF8"
+ },
+ "Play_u_amb_methane_1v_stop": {
+  "id": 29179810,
+  "guid": "AB8515BE-5BE0-48A8-BC15-77B329B13858",
+  "bundle": "7a3f12e01c09a56d7fa5582b4cc35df4.bundle",
+  "kind": "AB8515BE-5BE0-48A8-BC15-77B329B13858"
+ },
+ "Play_u_amb_fuel_monoprop3v_stop": {
+  "id": 2779846348,
+  "guid": "FEAB3932-8BBF-41BF-A63A-872258380683",
+  "bundle": "7a5aa8c006b1f2b4d359bc5c7c935c8c.bundle",
+  "kind": "FEAB3932-8BBF-41BF-A63A-872258380683"
+ },
+ "Play_u_amb_fuel_metallichyrdogen_1v_stop": {
+  "id": 800717238,
+  "guid": "7390129D-7B4B-4A1D-98FA-6759448EEE4F",
+  "bundle": "7a7413b12f15f8d77b171780bdcea2f9.bundle",
+  "kind": "7390129D-7B4B-4A1D-98FA-6759448EEE4F"
+ },
+ "Play_u_ENGINE_boosters_1v": {
+  "id": 3711748954,
+  "guid": "B95EA4FC-BE71-42D8-ACF6-B9304DB4DCFB",
+  "bundle": "7a94acf5bee52e483201274f689d86b6.bundle",
+  "kind": "B95EA4FC-BE71-42D8-ACF6-B9304DB4DCFB"
+ },
+ "Play_A_explosion_v_00_tank_methane": {
+  "id": 3444482747,
+  "guid": "3771D298-B835-4A47-8903-CC05A22B8AB6",
+  "bundle": "7ae8e3b69551839c9810b510f3ffce4a.bundle",
+  "kind": "3771D298-B835-4A47-8903-CC05A22B8AB6"
+ },
+ "Play_A_explosion_v_01": {
+  "id": 3497769442,
+  "guid": "7DEA2253-4792-45D3-8185-7AA81381101D",
+  "bundle": "7b1419ff2efed811e7ac7c51281ab129.bundle",
+  "kind": "7DEA2253-4792-45D3-8185-7AA81381101D"
+ },
+ "Play_A_explosion_v_02_tank_hydrogen": {
+  "id": 1105254163,
+  "guid": "341FC53A-BD1B-452B-951B-42263BBD42BF",
+  "bundle": "96e8f83692397e34f17194e09ba84af7.bundle",
+  "kind": "341FC53A-BD1B-452B-951B-42263BBD42BF"
+ },
+ "biome_none": {
+  "id": 2280059624,
+  "guid": "37323A35-EA4E-413D-881C-9155DC944265",
+  "bundle": "83d20e6b8c18df5b2da2fd2ef9739193.bundle",
+  "kind": "37323A35-EA4E-413D-881C-9155DC944265"
+ },
+ "Play_u_ENGINE_methalox_0v_Ant": {
+  "id": 2459536434,
+  "guid": "72D75A07-C314-4975-B486-E674639AEA33",
+  "bundle": "84da582c60c19c89c88d8f2d3b014cec.bundle",
+  "kind": "72D75A07-C314-4975-B486-E674639AEA33"
+ },
+ "biome_marsh_mud": {
+  "id": 3400094948,
+  "guid": "5C4EC2E1-361C-4D4A-9E71-F00DC84D96EF",
+  "bundle": "87638e85876b04ee0ce380d26eb4a0f2.bundle",
+  "kind": "5C4EC2E1-361C-4D4A-9E71-F00DC84D96EF"
+ },
+ "Play_u_ENGINE_methalox_3v_rhino_stop": {
+  "id": 1413743953,
+  "guid": "420381DE-ADED-46D0-A069-933A51DA7FFE",
+  "bundle": "8b926155f904fa4930b020bff9f2c1e1.bundle",
+  "kind": "420381DE-ADED-46D0-A069-933A51DA7FFE"
+ },
+ "Play_u_ENGINE_methalox_0v_Ant_stop": {
+  "id": 1319608209,
+  "guid": "8C574C0E-8211-4E4A-BE95-C3D38672713F",
+  "bundle": "8ccef79b9f6e5862e776f8a85ad8dd3a.bundle",
+  "kind": "8C574C0E-8211-4E4A-BE95-C3D38672713F"
+ },
+ "Play_u_amb_boosters_1v_stop": {
+  "id": 3763859523,
+  "guid": "6B032347-5274-44D6-A4D9-E26EE058445B",
+  "bundle": "8fe9eb38d12ee93e5b983d8c1439d601.bundle",
+  "kind": "6B032347-5274-44D6-A4D9-E26EE058445B"
+ },
+ "Play_u_amb_generator_fission_2v_stop": {
+  "id": 2217629498,
+  "guid": "6FF2B11E-DD36-4262-B2B9-FFCCACD6EBD0",
+  "bundle": "90e336b2a861d7ec4d4695356541d244.bundle",
+  "kind": "6FF2B11E-DD36-4262-B2B9-FFCCACD6EBD0"
+ },
+ "Play_A_explosion_Kerbal": {
+  "id": 2592821561,
+  "guid": "1E66E5AF-B0C2-40E4-B77B-0E59C9921C01",
+  "bundle": "91a2ca5d00417d831b6bfede3ff1b02a.bundle",
+  "kind": "1E66E5AF-B0C2-40E4-B77B-0E59C9921C01"
+ },
+ "biome_rock": {
+  "id": 668068321,
+  "guid": "31CD67DE-3C46-4408-B211-D5B9EE617D2A",
+  "bundle": "93a2d614283b01b3962d477a537de81f.bundle",
+  "kind": "31CD67DE-3C46-4408-B211-D5B9EE617D2A"
+ },
+ "Play_u_ENGINE_methalox_1v_Reliant_stop": {
+  "id": 3967529802,
+  "guid": "F247EE57-C071-4631-9698-E16248AF1B32",
+  "bundle": "9431f09613384804a2a43a66c7fe83c0.bundle",
+  "kind": "F247EE57-C071-4631-9698-E16248AF1B32"
+ },
+ "Play_u_ENGINE_methalox_1v_Reliant": {
+  "id": 749812223,
+  "guid": "49A17845-57FB-472C-8550-ED2F00D172CC",
+  "bundle": "9431f09613384804a2a43a66c7fe83c0.bundle",
+  "kind": "49A17845-57FB-472C-8550-ED2F00D172CC"
+ },
+ "Play_u_amb_parachutes_0v_stop": {
+  "id": 3719315577,
+  "guid": "43D76BAF-B7F1-45F9-AEA7-68DCF9BB9F1A",
+  "bundle": "95aeb273dfd8d47b87d21e53116bbd18.bundle",
+  "kind": "43D76BAF-B7F1-45F9-AEA7-68DCF9BB9F1A"
+ },
+ "Play_A_joint_break": {
+  "id": 2481361702,
+  "guid": "6204A65F-3CFA-44E2-B01C-9EDAFD1BF234",
+  "bundle": "96f051465e876865d73af3766131fb08.bundle",
+  "kind": "6204A65F-3CFA-44E2-B01C-9EDAFD1BF234"
+ },
+ "biome_collision_All": {
+  "id": 2057924454,
+  "guid": "F0B23324-1AF5-4332-A955-5795CD1DB939",
+  "bundle": "97dc4f2423b3714d3fa8c54966943230.bundle",
+  "kind": "F0B23324-1AF5-4332-A955-5795CD1DB939"
+ },
+ "Play_u_ENGINE_xeon_0v_dawn_stop": {
+  "id": 1707609774,
+  "guid": "C2C4320E-42D2-4D35-8F83-5C59DBA4551C",
+  "bundle": "989411156cd7bf49296453bcb5fac321.bundle",
+  "kind": "C2C4320E-42D2-4D35-8F83-5C59DBA4551C"
+ },
+ "Play_overheat_part_stop": {
+  "id": 3807618377,
+  "guid": "3D89F27E-5D19-40E2-BC6A-81380EEBF611",
+  "bundle": "98dbd6568ac3e73886f70e82ac49d1e5.bundle",
+  "kind": "3D89F27E-5D19-40E2-BC6A-81380EEBF611"
+ },
+ "Play_u_ENGINE_methalox_1v_dart_stop": {
+  "id": 1913348716,
+  "guid": "9E446717-3DFE-489A-A2B7-5FEAF3DEBAF1",
+  "bundle": "99bd2510c36930773fc1f710273be6c6.bundle",
+  "kind": "9E446717-3DFE-489A-A2B7-5FEAF3DEBAF1"
+ },
+ "Play_u_ENGINE_methalox_1v_dart": {
+  "id": 3824461465,
+  "guid": "49103F1A-DAF0-4AD3-A819-9987FC9E9FFC",
+  "bundle": "99bd2510c36930773fc1f710273be6c6.bundle",
+  "kind": "49103F1A-DAF0-4AD3-A819-9987FC9E9FFC"
+ },
+ "Play_u_amb_methalox_0v_stop": {
+  "id": 476681357,
+  "guid": "303AB00A-DBCB-487A-AABD-AF5A27B6C994",
+  "bundle": "9a089abc46396efebc859720552eac34.bundle",
+  "kind": "303AB00A-DBCB-487A-AABD-AF5A27B6C994"
+ },
+ "Play_parachutes_semi_deployed": {
+  "id": 1142761568,
+  "guid": "6C6E2F98-80AC-47D0-BEA6-8353C7F1CDE1",
+  "bundle": "9bb02bd00c061f58e77fd671f32ede62.bundle",
+  "kind": "6C6E2F98-80AC-47D0-BEA6-8353C7F1CDE1"
+ },
+ "Play_A_explosion_v_00_lights": {
+  "id": 486571909,
+  "guid": "9218EDA5-6A24-482C-B931-5DFA458B1C31",
+  "bundle": "9bc0d7fc147d5d612940693c1e3591d3.bundle",
+  "kind": "9218EDA5-6A24-482C-B931-5DFA458B1C31"
+ },
+ "Play_wheel_break_loop": {
+  "id": 1514421660,
+  "guid": "D017CE15-9634-41CC-B23E-C413C3A196EF",
+  "bundle": "9c467cbae2cf578b070ad603ea838b50.bundle",
+  "kind": "D017CE15-9634-41CC-B23E-C413C3A196EF"
+ },
+ "Play_u_amb_fairings_1v_stop": {
+  "id": 2871138681,
+  "guid": "AA9C8A39-F38D-4277-B24B-78C287534434",
+  "bundle": "9db54d8ee00626f82e6b90c8d120e5f6.bundle",
+  "kind": "AA9C8A39-F38D-4277-B24B-78C287534434"
+ },
+ "Play_u_amb_methalox_2v_stop": {
+  "id": 3515636487,
+  "guid": "40457462-6D47-45D4-8BFD-A14B87323D34",
+  "bundle": "9e035b2f3a441fb2bb6d5199abd78b5b.bundle",
+  "kind": "40457462-6D47-45D4-8BFD-A14B87323D34"
+ },
+ "Play_u_amb_fuel_monoprop0v_stop": {
+  "id": 3272280979,
+  "guid": "118CEEC3-8661-4B99-A17A-8146144B7ED1",
+  "bundle": "9f374ae2e6087b3ab3e5d1a31c1bd5f9.bundle",
+  "kind": "118CEEC3-8661-4B99-A17A-8146144B7ED1"
+ },
+ "Play_u_amb_generator_fission_2v": {
+  "id": 555583247,
+  "guid": "EAB69DF4-DF6A-4FF6-9BF3-EA96351F2552",
+  "bundle": "9fdf499806c986a0364dbe903df5c9c6.bundle",
+  "kind": "EAB69DF4-DF6A-4FF6-9BF3-EA96351F2552"
+ },
+ "Play_sonic_boom": {
+  "id": 2248084476,
+  "guid": "304A4A33-AAC9-459C-AE25-3964DFC99080",
+  "bundle": "a0cfda3159c4cc07608e55c9ec3c96a0.bundle",
+  "kind": "304A4A33-AAC9-459C-AE25-3964DFC99080"
+ },
+ "biome_snow": {
+  "id": 2819516543,
+  "guid": "0E5449DA-8E1F-49CF-A2DE-8C62DE024507",
+  "bundle": "a193fca0361e935545a4d964fb0f90dc.bundle",
+  "kind": "0E5449DA-8E1F-49CF-A2DE-8C62DE024507"
+ },
+ "Play_amb_vessel_emitter_Vessel_kerbal": {
+  "id": 1313592199,
+  "guid": "54E76AF2-BCE1-4B4C-9A0D-9BF3350E2FDE",
+  "bundle": "a289b354242e39855958e86ba44981c5.bundle",
+  "kind": "54E76AF2-BCE1-4B4C-9A0D-9BF3350E2FDE"
+ },
+ "Play_u_amb_fuel_methalox3v_stop": {
+  "id": 1685930838,
+  "guid": "94646F5D-5BA7-4983-91DB-F7FA381D5453",
+  "bundle": "a5816362fe331803853ad7a86c9eb738.bundle",
+  "kind": "94646F5D-5BA7-4983-91DB-F7FA381D5453"
+ },
+ "size_v_01": {
+  "id": 1401078617,
+  "guid": "3B6B5B84-7F72-4796-AC53-58FFDB6DD96A",
+  "bundle": "a848a5f3ca5cdcfc60313f0097b19fd8.bundle",
+  "kind": "3B6B5B84-7F72-4796-AC53-58FFDB6DD96A"
+ },
+ "Play_A_explosion_v_04": {
+  "id": 3497769447,
+  "guid": "BC3E0064-FD61-49BD-B81F-BFFC094E53B0",
+  "bundle": "ab8bfefcb80a69061437391cd45d8dc6.bundle",
+  "kind": "BC3E0064-FD61-49BD-B81F-BFFC094E53B0"
+ },
+ "Play_vessel_ambience_stop": {
+  "id": 1095866110,
+  "guid": "C6BA18E8-7FDF-403B-8229-B0C017403831",
+  "bundle": "ad2655820f2b59ec0f8bbbd822a91e66.bundle",
+  "kind": "C6BA18E8-7FDF-403B-8229-B0C017403831"
+ },
+ "Play_u_ENGINE_methalox_0v_Spark_stop": {
+  "id": 878323213,
+  "guid": "2F1744D0-63B3-437D-8B4E-765BACADF653",
+  "bundle": "aeefd7d96a10c1906af676e0473aa83a.bundle",
+  "kind": "2F1744D0-63B3-437D-8B4E-765BACADF653"
+ },
+ "Play_u_ENGINE_methalox_0v_Spark": {
+  "id": 1536671694,
+  "guid": "99D73D5C-E9CF-4FD7-901B-DBD8D7D72FB4",
+  "bundle": "aeefd7d96a10c1906af676e0473aa83a.bundle",
+  "kind": "99D73D5C-E9CF-4FD7-901B-DBD8D7D72FB4"
+ },
+ "Play_u_ENGINE_methalox_1v_Terrier": {
+  "id": 1204971429,
+  "guid": "13C49ABA-55EF-4C29-9F57-91AD5578FC73",
+  "bundle": "b77f22d4b05d7972cea0d6bf2a23f182.bundle",
+  "kind": "13C49ABA-55EF-4C29-9F57-91AD5578FC73"
+ },
+ "Play_u_ENGINE_methalox_1v_Terrier_stop": {
+  "id": 30463720,
+  "guid": "92B4FB95-DAA7-446C-978E-DD332316B52E",
+  "bundle": "b77f22d4b05d7972cea0d6bf2a23f182.bundle",
+  "kind": "92B4FB95-DAA7-446C-978E-DD332316B52E"
+ },
+ "biome_gas_giant": {
+  "id": 2160073275,
+  "guid": "552C46B6-0E99-4DC7-849E-89A1E741B51F",
+  "bundle": "b79d29db59d291fdd19a1281fdc29c62.bundle",
+  "kind": "552C46B6-0E99-4DC7-849E-89A1E741B51F"
+ },
+ "Play_u_amb_fuel_methane_2v_stop": {
+  "id": 138087474,
+  "guid": "C390310E-926B-4C52-8E0D-B1CB5ADDB944",
+  "bundle": "bd28013d826f8c61b2d56ff4bb0bb68d.bundle",
+  "kind": "C390310E-926B-4C52-8E0D-B1CB5ADDB944"
+ },
+ "biome_concrete": {
+  "id": 1276685323,
+  "guid": "5CD19AE8-562E-4528-BCBB-08468DA9F0BA",
+  "bundle": "be91006f98c60c358a8eeea9e41585fd.bundle",
+  "kind": "5CD19AE8-562E-4528-BCBB-08468DA9F0BA"
+ },
+ "Play_parachutes_deployed": {
+  "id": 2955644431,
+  "guid": "57D10F49-8C7F-49FF-9E3D-F732DA4900C3",
+  "bundle": "c04ab540aa2b5d35643db94a3cf2b80c.bundle",
+  "kind": "57D10F49-8C7F-49FF-9E3D-F732DA4900C3"
+ },
+ "Play_A_explosion_v_01_solidBooster": {
+  "id": 1001891282,
+  "guid": "6F98505F-D8BD-4F65-B48D-7879FF42E5A4",
+  "bundle": "c0a94e61a638d4a808695cd1e528a6ba.bundle",
+  "kind": "6F98505F-D8BD-4F65-B48D-7879FF42E5A4"
+ },
+ "biome_sand": {
+  "id": 2264030716,
+  "guid": "951189A4-C0BB-46B7-901B-7FE842F8BD07",
+  "bundle": "c243c3d88b7df909190df84d5347f129.bundle",
+  "kind": "951189A4-C0BB-46B7-901B-7FE842F8BD07"
+ },
+ "Play_u_amb_xeon_0v_stop": {
+  "id": 3176936127,
+  "guid": "27F00E6B-7A51-4B71-AFE9-91E8D4A7F153",
+  "bundle": "c29e7f04888ca6328d19ed22aaa00094.bundle",
+  "kind": "27F00E6B-7A51-4B71-AFE9-91E8D4A7F153"
+ },
+ "Play_docking_disconnected": {
+  "id": 1390262721,
+  "guid": "CAEE7155-772E-4256-8FE4-0F062AAA7225",
+  "bundle": "c4353137b8416bdb66f316df52cc617d.bundle",
+  "kind": "CAEE7155-772E-4256-8FE4-0F062AAA7225"
+ },
+ "Play_u_ENGINE_methane_0v_juno_stop": {
+  "id": 1471822010,
+  "guid": "FD7AA190-50DD-4CBE-B1BF-A2558E446E35",
+  "bundle": "c67713834ade8c7336bd7131fd595eba.bundle",
+  "kind": "FD7AA190-50DD-4CBE-B1BF-A2558E446E35"
+ },
+ "Play_A_explosion_v_00_tank_methalox": {
+  "id": 3821379341,
+  "guid": "BCD6D417-D691-4E36-8D18-9CDE1F109A4F",
+  "bundle": "c69c1090c1c861fe77003a621eca708d.bundle",
+  "kind": "BCD6D417-D691-4E36-8D18-9CDE1F109A4F"
+ },
+ "Play_u_amb_fuel_monoprop0v": {
+  "id": 1458353300,
+  "guid": "297173F4-C4C8-456B-90C3-076ED4B96227",
+  "bundle": "cad912cd6d8996fafa0788e3cfc46597.bundle",
+  "kind": "297173F4-C4C8-456B-90C3-076ED4B96227"
+ },
+ "Play_u_amb_wing_2v_stop": {
+  "id": 3185817430,
+  "guid": "F5DC9656-5FFA-4351-A678-EC1D86B45510",
+  "bundle": "cc5678fd0c0ef612ffc761ca35cda0ef.bundle",
+  "kind": "F5DC9656-5FFA-4351-A678-EC1D86B45510"
+ },
+ "Play_u_amb_wing_2v": {
+  "id": 835845371,
+  "guid": "1F41C756-D44D-4602-8FE3-C50BEF1DF515",
+  "bundle": "cc5678fd0c0ef612ffc761ca35cda0ef.bundle",
+  "kind": "1F41C756-D44D-4602-8FE3-C50BEF1DF515"
+ },
+ "Play_biome_collision_Grinding_loop": {
+  "id": 188652621,
+  "guid": "D9C98605-55CE-4D26-BF5D-F42EB6948EA6",
+  "bundle": "cdd6cfcb7a9819e230070269c21b15a6.bundle",
+  "kind": "D9C98605-55CE-4D26-BF5D-F42EB6948EA6"
+ },
+ "Play_u_ENGINE_methalox_3v_rhino": {
+  "id": 1216354290,
+  "guid": "EA0804EF-D191-490A-B3D0-A48B0A8E1C89",
+  "bundle": "cdee5119ae01308a3213d3eb40559044.bundle",
+  "kind": "EA0804EF-D191-490A-B3D0-A48B0A8E1C89"
+ },
+ "Play_OutOfFuel_Engine": {
+  "id": 59414198,
+  "guid": "92797A19-480B-4D56-9B4C-733DCD6A5502",
+  "bundle": "d15b44cc06a316e0cbaaab9a6c284054.bundle",
+  "kind": "92797A19-480B-4D56-9B4C-733DCD6A5502"
+ },
+ "Play_u_amb_methalox_2v": {
+  "id": 3912380968,
+  "guid": "3061B8F2-729C-4418-9182-4DE7C1F8681A",
+  "bundle": "d510207847d786953beb59364af35631.bundle",
+  "kind": "3061B8F2-729C-4418-9182-4DE7C1F8681A"
+ },
+ "Play_resources_fuel_flow_OFF_from": {
+  "id": 2810688512,
+  "guid": "158EF6C0-FE55-40EC-B897-96EB853795AA",
+  "bundle": "d554e3874e7293e5fe9ed47396670206.bundle",
+  "kind": "158EF6C0-FE55-40EC-B897-96EB853795AA"
+ },
+ "Play_u_amb_fuel_monoprop1v": {
+  "id": 1475130883,
+  "guid": "5166BE46-7718-4BDA-90A4-716AAFC9FA11",
+  "bundle": "d5f9ab713b643f21f5a24fd96cd2d280.bundle",
+  "kind": "5166BE46-7718-4BDA-90A4-716AAFC9FA11"
+ },
+ "Play_parachutes_activate": {
+  "id": 4222006438,
+  "guid": "437D4285-C98F-492C-A59A-B9F8885558AD",
+  "bundle": "d8c24f631dd2760d6b6c6cb62dc16f07.bundle",
+  "kind": "437D4285-C98F-492C-A59A-B9F8885558AD"
+ },
+ "Play_A_explosion_v_03_tank_methane": {
+  "id": 246247086,
+  "guid": "8C70BE68-9D7E-4C33-BF5B-52F8CA9A4606",
+  "bundle": "d97f5fd662da0d79d52c5309955c3cf9.bundle",
+  "kind": "8C70BE68-9D7E-4C33-BF5B-52F8CA9A4606"
+ },
+ "Play_rcs_rocket_launch__": {
+  "id": 2597979243,
+  "guid": "341F071A-EECF-4F19-A555-CD37530977C8",
+  "bundle": "d99e2059b38195c6ac938aeea2a02ce3.bundle",
+  "kind": "341F071A-EECF-4F19-A555-CD37530977C8"
+ },
+ "biome_ice": {
+  "id": 3022794867,
+  "guid": "7F611944-403A-4C9E-8D80-6A3D744EECD6",
+  "bundle": "dca34a96e58f23c4b364517e05ba8acc.bundle",
+  "kind": "7F611944-403A-4C9E-8D80-6A3D744EECD6"
+ },
+ "Play_A_explosion_v_01_tank_metallichydrogen": {
+  "id": 850889367,
+  "guid": "3566F760-F827-4BF7-B366-97FE93F84798",
+  "bundle": "dcdcbca3f5f535a49c27909d9495f8e1.bundle",
+  "kind": "3566F760-F827-4BF7-B366-97FE93F84798"
+ },
+ "Play_A_explosion_v_00_tank_monoprop": {
+  "id": 2150864203,
+  "guid": "B6BA7B18-46A1-4ED3-8912-74FE8B7B790A",
+  "bundle": "e081320555ff1c1ea1aa61c7d8afeaa6.bundle",
+  "kind": "B6BA7B18-46A1-4ED3-8912-74FE8B7B790A"
+ },
+ "Play_resources_fuel_flow_ON_to": {
+  "id": 869555351,
+  "guid": "2565C8AD-6922-4116-B331-9CF92C4E7197",
+  "bundle": "e18fc85d0bae237eaa40ac7dd581b8b8.bundle",
+  "kind": "2565C8AD-6922-4116-B331-9CF92C4E7197"
+ },
+ "Play_A_explosion_v_03": {
+  "id": 3497769440,
+  "guid": "14F71578-B409-45AB-B5D6-B62C684AD986",
+  "bundle": "e2235c6c317ee312bd7bbeebb9cf800d.bundle",
+  "kind": "14F71578-B409-45AB-B5D6-B62C684AD986"
+ },
+ "Play_Kerbal_Part_collision_start_hit_VO": {
+  "id": 3260672473,
+  "guid": "69D8567E-053B-49E1-950F-2F85DFD5C471",
+  "bundle": "e50da976e910d3508abeb319c6a25911.bundle",
+  "kind": "69D8567E-053B-49E1-950F-2F85DFD5C471"
+ },
+ "Play_u_ENGINE_methalox_1v_Cornet": {
+  "id": 2915664939,
+  "guid": "6F0EB2DF-9060-4DB3-AF6E-B8AB2313CCA4",
+  "bundle": "e75ef5dce32d3e2ae9c325f48db5875a.bundle",
+  "kind": "6F0EB2DF-9060-4DB3-AF6E-B8AB2313CCA4"
+ },
+ "Play_u_ENGINE_methalox_1v_Cornet_stop": {
+  "id": 1927993190,
+  "guid": "A0AF18BA-99D0-4FB6-879E-AEE02A4C10B3",
+  "bundle": "e75ef5dce32d3e2ae9c325f48db5875a.bundle",
+  "kind": "A0AF18BA-99D0-4FB6-879E-AEE02A4C10B3"
+ },
+ "Play_u_amb_fuel_methane_3v": {
+  "id": 2403680568,
+  "guid": "E1E30943-052B-4F85-B21F-47A9F3CFBE49",
+  "bundle": "e79c91223f4033f13daeda31e638b9ef.bundle",
+  "kind": "E1E30943-052B-4F85-B21F-47A9F3CFBE49"
+ },
+ "Play_u_amb_fuel_monoprop2v": {
+  "id": 1424798154,
+  "guid": "EF4B693F-0236-4F4C-BD01-FB9F90E35615",
+  "bundle": "ec4f0ce82eba35705f7b1600373a1788.bundle",
+  "kind": "EF4B693F-0236-4F4C-BD01-FB9F90E35615"
+ },
+ "Play_u_amb_methane_0v_stop": {
+  "id": 458070695,
+  "guid": "05846286-6C7A-43D5-ADB5-0265D92BD33E",
+  "bundle": "ecd0bc9a8915b047f12576d013ac51f9.bundle",
+  "kind": "05846286-6C7A-43D5-ADB5-0265D92BD33E"
+ },
+ "Play_generator_thermoeletric_radiosotope_ON": {
+  "id": 1937915007,
+  "guid": "BA687BBC-1258-40AC-9918-60BC1843E37B",
+  "bundle": "f206adb5e31627a1856434ca40bfe1ff.bundle",
+  "kind": "BA687BBC-1258-40AC-9918-60BC1843E37B"
+ },
+ "Play_u_amb_fuel_methalox2v": {
+  "id": 3561324172,
+  "guid": "46D544A2-7671-4065-BF9A-BDB6FB82BEA7",
+  "bundle": "f46cb784d15713c93a586a87060efdcc.bundle",
+  "kind": "46D544A2-7671-4065-BF9A-BDB6FB82BEA7"
+ },
+ "biome_metal": {
+  "id": 3322349027,
+  "guid": "73DFAC8D-4460-4C1F-9A52-B9947E19204A",
+  "bundle": "f5b2b292a21e62926d743262571e2b04.bundle",
+  "kind": "73DFAC8D-4460-4C1F-9A52-B9947E19204A"
+ },
+ "biome_dust_moon": {
+  "id": 3611659210,
+  "guid": "2BCD9E58-C8CA-4E6C-AADB-6F5C8C201A6A",
+  "bundle": "f9116947151007ed0f9a738c8093c136.bundle",
+  "kind": "2BCD9E58-C8CA-4E6C-AADB-6F5C8C201A6A"
+ },
+ "Play_u_amb_methalox_3v": {
+  "id": 3929158535,
+  "guid": "BFA45A29-C4E7-4709-A3A6-8EA13B7244A0",
+  "bundle": "fb06c8e402ed2fbdfc1c42aced368a39.bundle",
+  "kind": "BFA45A29-C4E7-4709-A3A6-8EA13B7244A0"
+ },
+ "Play_generator_thermoeletric_radiosotope_OFF": {
+  "id": 1292185395,
+  "guid": "E196CE22-2327-47DA-ADA5-E0A4FE6F915D",
+  "bundle": "fb2b816eac33cd6c52f951d5f4f051e9.bundle",
+  "kind": "E196CE22-2327-47DA-ADA5-E0A4FE6F915D"
+ },
+ "Play_u_amb_fuel_external_0v": {
+  "id": 1028777594,
+  "guid": "F9C0062D-B54D-43D9-A32A-FA8001461543",
+  "bundle": "fbf47ad7c98f589837fd51ebeda6b81a.bundle",
+  "kind": "F9C0062D-B54D-43D9-A32A-FA8001461543"
+ },
+ "Play_u_amb_fuel_external_0v_stop": {
+  "id": 1950766857,
+  "guid": "96C6CB2B-C01C-4159-97A4-97BB9D26141A",
+  "bundle": "fbf47ad7c98f589837fd51ebeda6b81a.bundle",
+  "kind": "96C6CB2B-C01C-4159-97A4-97BB9D26141A"
+ },
+ "Play_A_explosion_v_00_tank_fueline_ext": {
+  "id": 3763099601,
+  "guid": "0B4B5833-1B0A-4CF6-82A7-8FD6B3AE5E9B",
+  "bundle": "fbf47ad7c98f589837fd51ebeda6b81a.bundle",
+  "kind": "0B4B5833-1B0A-4CF6-82A7-8FD6B3AE5E9B"
+ },
+ "Play_u_amb_fuel_methalox0v_stop": {
+  "id": 1809008737,
+  "guid": "5F68A6A9-9506-42DF-AB1E-A744CE1689AD",
+  "bundle": "fe7df5f45ee725871b81e1d25c9e248a.bundle",
+  "kind": "5F68A6A9-9506-42DF-AB1E-A744CE1689AD"
+ },
+ "Play_u_amb_fuel_xenon_0v": {
+  "id": 3041333683,
+  "guid": "6293273F-D795-4F2D-B4D5-A294F0606E7F",
+  "bundle": "ff341c81bc3a66d1b4ca2d777e5dea83.bundle",
+  "kind": "6293273F-D795-4F2D-B4D5-A294F0606E7F"
+ }
+}
