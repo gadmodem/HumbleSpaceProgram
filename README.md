@@ -89,6 +89,6 @@ Not tracked, regenerate locally after a clone:
 | `unity/Deploy/`, `<KSP2>\mods\__Testing\HumanKerbals` | `tools\unity_batch.ps1 -Method HumanKerbalsBatch.BuildForPlayer` / `Deploy` |
 | `logs/` | Written by the batch and verification scripts |
 
-The Unity folders at the repository root (`Assets`, `Library`, `Packages`, `ProjectSettings`,
-`UserSettings`) are a leftover from an early Unity license check, not part of the project, and are
-ignored.
+Unity project folders at the repository root (`Assets`, `Library`, `Packages`, `ProjectSettings`,
+`UserSettings`) are ignored as a guard: an early Unity license check once opened the root as a
+project and left them behind. The real project is `unity/`.

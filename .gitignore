@@ -1,5 +1,5 @@
-# Stray Unity project at the repo root (left behind by an early Unity license check; the real
-# project is in unity/). Ignored rather than deleted.
+# Guard against Unity Hub opening the repository root as a project (an early license check did;
+# the leftovers were removed on 2026-09-06). The real project is in unity/.
 /Assets/
 /Library/
 /Packages/
