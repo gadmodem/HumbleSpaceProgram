@@ -21,7 +21,7 @@ MonoBehaviour:
   versionCheck: 
   minKsp2Version: 0.2.9
   maxKsp2Version: '*'
-  source: https://github.com/tanodeluca/HumanKerbals
+  source: https://github.com/gadmodem/HumanKerbals
   allGroup: {fileID: 11400000, guid: 0236ec3c880e1d24786814fc71dea6bc, type: 2}
   partsGroup: {fileID: 11400000, guid: 44bb292a707847f4fab0b0ff5842dd45, type: 2}
   missionsGroup: {fileID: 11400000, guid: 109e5a5cb7c8f4d4c89f1b87d2cecff1, type: 2}
