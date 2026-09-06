@@ -1,0 +1,39 @@
+{
+  "spec": "2.0",
+  "mod_id": "HumbleSpaceProgram",
+  "name": "Humble Space Program",
+  "author": "tano",
+  "description": "Makes the program human: Gerbal models, textures, names, narration, and sound effects.",
+  "source": "https://github.com/gadmodem/HumbleSpaceProgram",
+  "version": "0.1.0",
+  "version_check": "",
+  "ksp2_version": {
+    "min": "0.2.9",
+    "max": "*"
+  },
+  "dependencies": [
+    {
+      "id": "SpaceWarp2",
+      "version": {
+        "min": "2.0.0",
+        "max": "*"
+      }
+    },
+    {
+      "id": "Ksp2Redux",
+      "version": {
+        "min": "0.2.9",
+        "max": "*"
+      }
+    },
+    {
+      "id": "PatchManager",
+      "version": {
+        "min": "0.0.0",
+        "max": "*"
+      }
+    }
+  ],
+  "conflicts": [],
+  "main_assembly": "HumbleSpaceProgram.dll"
+}

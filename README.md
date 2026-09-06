@@ -1,4 +1,4 @@
-# Gerbal Space Program (GSP): the Human Gerbals KSP2 Redux mod
+# Humble Space Program (HSP): the KSP2 Redux mod that makes the kerbals human
 
 Makes the inhabitants of Kerbal Space Program 2 Redux human and calls them Gerbals: 3D models,
 textures, hair and eyes, names, Gerbal narration, and body sound effects. Targets the Redux install on this machine
@@ -11,8 +11,8 @@ renders human astronauts for every roster kerbal using the generated placeholder
 | --- | --- | --- | --- |
 | ![](docs/images/blender_human_m.png) | ![](docs/images/portrait_jeb_phase1.png) | ![](docs/images/portrait_valentina_phase1.png) | ![](docs/images/portrait_lubree_phase1.png) |
 
-The mod is installed for testing at `<KSP2>\mods\__Testing\HumanKerbals` (rebuild with
-`tools\unity_batch.ps1 -Method HumanKerbalsBatch.BuildForPlayer`); `unity\Deploy\HumanKerbals.zip`
+The mod is installed for testing at `<KSP2>\mods\__Testing\HumbleSpaceProgram` (rebuild with
+`tools\unity_batch.ps1 -Method HumbleSpaceProgramBatch.BuildForPlayer`); `unity\Deploy\HumbleSpaceProgram.zip`
 is the distributable build.
 
 Mission Control and the main-menu vignettes use pre-built kerbal actor prefabs that bypass the
@@ -42,7 +42,7 @@ lists every kerbal sound event with its Wwise ID.
 | Path | What |
 | --- | --- |
 | `docs/` | Plan, game reference, audio event table |
-| `mod/HumanKerbals/` | Mod content: `swinfo.json`, C# code, data tables, localization, soundbank slot, patches |
+| `mod/HumbleSpaceProgram/` | Mod content: `swinfo.json`, C# code, data tables, localization, soundbank slot, patches |
 | `tools/` | Python scripts that read the game's Addressables catalog, bundles and Wwise banks |
 | `reference/` | Extracted stock meshes, textures, materials, rig hierarchies and clip list (git-ignored, local only) |
 | `unity/` | The Unity project the Redux SDK Manager generates (template 26w35b, Unity 6000.5.8f1; the imported game and caches are regenerated locally, see "Version control") |
@@ -56,15 +56,15 @@ tools\venv\Scripts\python tools\extract_reference.py
 # 2. The Unity project already exists in unity\ (template 26w35b, Unity 6000.5.8f1). After signing
 #    in to Unity Hub once (license), import the game and create the mod headless:
 tools\sdk\redux-sdk-cli.exe setup --ksp2 "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program 2\KSP2_x64.exe" unity
-powershell -File tools\unity_batch.ps1 -Method HumanKerbalsBatch.SetupMod
-powershell -File tools\unity_batch.ps1 -Method HumanKerbalsBatch.BuildForPlayer   # -> <KSP2>\mods\__Testing\HumanKerbals
-powershell -File tools\unity_batch.ps1 -Method HumanKerbalsBatch.Deploy           # -> unity\Deploy\HumanKerbals.zip
+powershell -File tools\unity_batch.ps1 -Method HumbleSpaceProgramBatch.SetupMod
+powershell -File tools\unity_batch.ps1 -Method HumbleSpaceProgramBatch.BuildForPlayer   # -> <KSP2>\mods\__Testing\HumbleSpaceProgram
+powershell -File tools\unity_batch.ps1 -Method HumbleSpaceProgramBatch.Deploy           # -> unity\Deploy\HumbleSpaceProgram.zip
 
 # 3. Blender reference scene with the kerbal armature and stock meshes:
 blender --background --python tools\blender_build_rig.py -- reference blender\kerbal_rig.blend
 ```
 
-Source of truth for the plugin code is `mod\HumanKerbals\Code`; `unity\Staging\Code` is the copy the
+Source of truth for the plugin code is `mod\HumbleSpaceProgram\Code`; `unity\Staging\Code` is the copy the
 headless SetupMod step installs into the Unity project.
 
 Stock game assets extracted into `reference/` are for study and scale matching only and must never
@@ -86,7 +86,7 @@ Not tracked, regenerate locally after a clone:
 | `tools/venv/` | `python -m venv tools\venv` then `pip install -r tools\requirements.txt` |
 | `tools/vgmstream/`, `tools/wwiser/` | Download from github.com/vgmstream/vgmstream and github.com/bnnm/wwiser (releases) |
 | `unity/Packages/KSP2_x64/`, `unity/Assets/StreamingAssets/`, `unity/Redux/`, `unity/Library/` | `tools\sdk\redux-sdk-cli.exe setup --ksp2 <KSP2_x64.exe> unity` (imports the game) |
-| `unity/Deploy/`, `<KSP2>\mods\__Testing\HumanKerbals` | `tools\unity_batch.ps1 -Method HumanKerbalsBatch.BuildForPlayer` / `Deploy` |
+| `unity/Deploy/`, `<KSP2>\mods\__Testing\HumbleSpaceProgram` | `tools\unity_batch.ps1 -Method HumbleSpaceProgramBatch.BuildForPlayer` / `Deploy` |
 | `logs/` | Written by the batch and verification scripts |
 
 Unity project folders at the repository root (`Assets`, `Library`, `Packages`, `ProjectSettings`,

@@ -5,7 +5,7 @@ Sound. The byte layouts mirror the stock KSP2 Redux banks (English/VO_events.bnk
 dumped by wwiser; see docs/audio-events.md ("Generated banks").
 
 Library use:
-    bank = Bank("HumanKerbals_narration")
+    bank = Bank("HumbleSpaceProgram_narration")
     bank.add_line("Play_Gerbal_VO_123", samples_int16, 48000, bus_id=1459302360, volume_db=-6.0)
     open(path, "wb").write(bank.build())
 

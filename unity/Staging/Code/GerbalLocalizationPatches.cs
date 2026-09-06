@@ -7,7 +7,7 @@ using System.Text;
 using HarmonyLib;
 using I2.Loc;
 
-namespace HumanKerbals
+namespace HumbleSpaceProgram
 {
     internal static class GerbalTerminology
     {

@@ -17,7 +17,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace HumanKerbals
+namespace HumbleSpaceProgram
 {
     public sealed class HumanProportions : MonoBehaviour
     {

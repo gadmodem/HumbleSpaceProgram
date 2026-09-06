@@ -12,7 +12,7 @@ using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.Video;
 
-namespace HumanKerbals
+namespace HumbleSpaceProgram
 {
     internal static class HumanGerbalOrientationVideo
     {
@@ -57,7 +57,7 @@ namespace HumanKerbals
             _replacement.name = "HumanGerbalOrientationData";
             VideoClipField.SetValue(_replacement, _videoHandle.Result);
             replacement = _replacement;
-            HumanKerbalsPlugin.Instance?.SWLogger.LogInfo(
+            HumbleSpaceProgramPlugin.Instance?.SWLogger.LogInfo(
                 $"Orientation video: {StockOrientationClipName} -> {_videoHandle.Result.name}.");
             return true;
         }
@@ -66,7 +66,7 @@ namespace HumanKerbals
         {
             if (_warned) return;
             _warned = true;
-            HumanKerbalsPlugin.Instance?.SWLogger.LogWarning(message);
+            HumbleSpaceProgramPlugin.Instance?.SWLogger.LogWarning(message);
         }
 
         internal static void CaptureSourceAndReplace(ref LocalizedVideoData videoData)
@@ -145,7 +145,7 @@ namespace HumanKerbals
             _replacement.name = "HumanGerbalTalkingLoop";
             GifField.SetValue(_replacement, frames);
             replacement = _replacement;
-            HumanKerbalsPlugin.Instance?.SWLogger.LogInfo("Talking Gerbal loop: replaced six stock frames.");
+            HumbleSpaceProgramPlugin.Instance?.SWLogger.LogInfo("Talking Gerbal loop: replaced six stock frames.");
             return true;
         }
 
@@ -153,7 +153,7 @@ namespace HumanKerbals
         {
             if (_warned) return;
             _warned = true;
-            HumanKerbalsPlugin.Instance?.SWLogger.LogWarning(message);
+            HumbleSpaceProgramPlugin.Instance?.SWLogger.LogWarning(message);
         }
     }
 

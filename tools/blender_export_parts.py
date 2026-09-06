@@ -1,7 +1,7 @@
 """Export hand-modelled human parts from blender/human_rig.blend as Unity-ready FBX files.
 
 Usage (headless, from the project root):
-    blender --background blender/human_rig.blend --python tools/blender_export_parts.py -- unity/Assets/HumanKerbals/Models
+    blender --background blender/human_rig.blend --python tools/blender_export_parts.py -- unity/Assets/HumbleSpaceProgram/Models
 
 Contract (the same one tools/blender_make_human.py follows):
   * the armature is "kerbal_rig" (built by tools/blender_build_rig.py, do not re-create it);
@@ -30,7 +30,7 @@ ARM_NAME = "kerbal_rig"
 
 
 def main():
-    out_dir = os.path.abspath(sys.argv[sys.argv.index("--") + 1]) if "--" in sys.argv else "unity/Assets/HumanKerbals/Models"
+    out_dir = os.path.abspath(sys.argv[sys.argv.index("--") + 1]) if "--" in sys.argv else "unity/Assets/HumbleSpaceProgram/Models"
     os.makedirs(out_dir, exist_ok=True)
     arm = bpy.data.objects[ARM_NAME]
     human = bpy.data.collections.get("human")

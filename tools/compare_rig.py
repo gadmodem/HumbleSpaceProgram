@@ -1,5 +1,5 @@
 """Compare the bone transforms of an imported Unity model (logs/unity_prefab_hierarchies.jsonl, written
-by HumanKerbalsBatch.ImportModels) against the stock body prefab (reference/hierarchies/body_spacesuit_01.json).
+by HumbleSpaceProgramBatch.ImportModels) against the stock body prefab (reference/hierarchies/body_spacesuit_01.json).
 
     python tools/compare_rig.py [model_stem]
 

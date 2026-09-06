@@ -29,7 +29,7 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
-namespace HumanKerbals
+namespace HumbleSpaceProgram
 {
     /// Marks a spawned actor prefab that has been (or is being) converted.
     public sealed class HumanActorMarker : MonoBehaviour
@@ -49,7 +49,7 @@ namespace HumanKerbals
             }
             catch (Exception e)
             {
-                HumanKerbalsPlugin.Instance?.SWLogger.LogError("Actor swap failed: " + e);
+                HumbleSpaceProgramPlugin.Instance?.SWLogger.LogError("Actor swap failed: " + e);
             }
         }
 
@@ -112,7 +112,7 @@ namespace HumanKerbals
 
         public static void OnActorSpawned(RandomPrefabLoader_Target target, List<GameState> validStates)
         {
-            var data = HumanKerbalsPlugin.Data?.ActorSwap;
+            var data = HumbleSpaceProgramPlugin.Data?.ActorSwap;
             if (data == null || !data.Enabled || target == null) return;
             var root = target.gameObject;
             if (root.GetComponent<HumanActorMarker>() != null) return;
@@ -134,7 +134,7 @@ namespace HumanKerbals
             }
             else
             {
-                HumanKerbalsPlugin.Instance.StartCoroutine(ApplyWhenReady(root));
+                HumbleSpaceProgramPlugin.Instance.StartCoroutine(ApplyWhenReady(root));
             }
         }
 
@@ -157,7 +157,7 @@ namespace HumanKerbals
 
         private static void Apply(GameObject root)
         {
-            var data = HumanKerbalsPlugin.Data.ActorSwap;
+            var data = HumbleSpaceProgramPlugin.Data.ActorSwap;
             var masters = root.GetComponentsInChildren<Transform>(true).Where(t => t.name == "bone_kerbal_master_parent").ToList();
             foreach (var master in masters)
             {
@@ -167,14 +167,14 @@ namespace HumanKerbals
                 }
                 catch (Exception e)
                 {
-                    HumanKerbalsPlugin.Instance.SWLogger.LogError($"Actor swap failed for {Path(master)}: {e}");
+                    HumbleSpaceProgramPlugin.Instance.SWLogger.LogError($"Actor swap failed for {Path(master)}: {e}");
                 }
             }
         }
 
         private static bool SwapRig(Transform master, ActorSwapData data)
         {
-            var log = HumanKerbalsPlugin.Instance.SWLogger;
+            var log = HumbleSpaceProgramPlugin.Instance.SWLogger;
             var rig = master.parent;
             if (rig == null) return false;
             var layer = rig.gameObject.layer;
@@ -340,7 +340,7 @@ namespace HumanKerbals
                     var b = smr.bones[i];
                     if (b == null || !bones.TryGetValue(b.name, out newBones[i]))
                     {
-                        HumanKerbalsPlugin.Instance.SWLogger.LogWarning(
+                        HumbleSpaceProgramPlugin.Instance.SWLogger.LogWarning(
                             $"Actor {Path(rig)}: bone '{(b ? b.name : "null")}' needed by {prefab.name}/{smr.name} is missing, part skipped.");
                         UnityEngine.Object.Destroy(inst);
                         return false;
@@ -382,7 +382,7 @@ namespace HumanKerbals
                 }
                 else
                 {
-                    HumanKerbalsPlugin.Instance.SWLogger.LogWarning($"{prefab.name}/{mr.name}: attach bone '{parentName}' not found on the actor.");
+                    HumbleSpaceProgramPlugin.Instance.SWLogger.LogWarning($"{prefab.name}/{mr.name}: attach bone '{parentName}' not found on the actor.");
                 }
             }
             UnityEngine.Object.Destroy(inst);

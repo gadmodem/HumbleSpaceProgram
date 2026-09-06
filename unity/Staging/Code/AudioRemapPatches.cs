@@ -17,7 +17,7 @@
 //   2. explicit name pairs (audioRemap), for exceptions to the rule;
 //   3. the generated narration table (assets/data/narration_remap.json, tools/vo_gerbal.py): stock
 //      voice-over event ids whose line says "Kerbal" -> the "Gerbal" versions embedded in
-//      HumanKerbals_narration.bnk.
+//      HumbleSpaceProgram_narration.bnk.
 // Wwise ids are FNV-1 32-bit hashes of the lower-cased name (WwiseHash), so names resolve to ids here.
 
 using System;
@@ -28,7 +28,7 @@ using System.Reflection;
 using System.Text;
 using HarmonyLib;
 
-namespace HumanKerbals
+namespace HumbleSpaceProgram
 {
     internal static class WwiseHash
     {

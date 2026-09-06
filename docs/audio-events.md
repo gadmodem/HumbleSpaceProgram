@@ -122,7 +122,7 @@ Three sources, all in `assets/data`:
    Gerbal names and the rule covers every kerbal event.
 2. **Explicit pairs** (`audioRemap`), exceptions to the rule; empty by default.
 3. **Narration table** (`narration_remap.json`, generated): stock VO event id -> mod event
-   `Play_Gerbal_VO_<stockEventId>` in `assets/soundbanks/HumanKerbals_narration.bnk`.
+   `Play_Gerbal_VO_<stockEventId>` in `assets/soundbanks/HumbleSpaceProgram_narration.bnk`.
 
 ### Generated banks (no Wwise authoring tool needed)
 

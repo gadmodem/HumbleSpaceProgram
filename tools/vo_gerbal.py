@@ -7,7 +7,7 @@ Steps (outputs go to the work dir, git-ignored because they hold decoded stock a
   transcribe  decode every English .wem and transcribe it with word timestamps (tools/vo_transcribe.py)
   edit        for every "Kerbal" word: shorten the /k/ aspiration so the ear hears /g/ ("Gerbal");
               writes edited/<wem>.wav and edit_report.json (--verify re-transcribes each edited line)
-  bank        write mod/HumanKerbals/assets/soundbanks/HumanKerbals_narration.bnk (embedded PCM, one
+  bank        write mod/HumbleSpaceProgram/assets/soundbanks/HumbleSpaceProgram_narration.bnk (embedded PCM, one
               event per edited stock line) and assets/data/narration_remap.json for the plugin
   all         events, transcribe, edit, bank
 
@@ -35,9 +35,9 @@ import ksp2paths  # noqa: E402
 from wwise_bank_write import Bank, fnv1  # noqa: E402
 
 DEFAULT_WORKDIR = os.path.join(HERE, "..", "reference", "audio")
-MOD_DIR = os.path.join(HERE, "..", "mod", "HumanKerbals")
+MOD_DIR = os.path.join(HERE, "..", "mod", "HumbleSpaceProgram")
 WWISER = os.path.join(HERE, "wwiser", "wwiser.pyz")
-BANK_NAME = "HumanKerbals_narration"
+BANK_NAME = "HumbleSpaceProgram_narration"
 VO_BUS = 1459302360       # bus the stock narration actor-mixer routes to (voice sliders live above it)
 VO_VOLUME_DB = -6.0       # stock chain: actor-mixer -4 dB + parent actor-mixer -2 dB
 WORD_RE = re.compile(r"(?i)^kerbal")

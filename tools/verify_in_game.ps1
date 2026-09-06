@@ -1,4 +1,4 @@
-# Launch KSP2 Redux with the Human Kerbals mod and watch the log.
+# Launch KSP2 Redux with the Humble Space Program mod and watch the log.
 #
 #   powershell -File tools\verify_in_game.ps1                 # startup check: registration + post-init lines, then close
 #   powershell -File tools\verify_in_game.ps1 -TestLoad       # plugin test mode: auto-load the newest save, dump kerbal
@@ -36,18 +36,18 @@ if ($TestLoad) {
     if (-not $Save) { throw "No save file found to load." }
     if (Test-Path $portraitDir) { Remove-Item $portraitDir -Recurse -Force }
     New-Item -ItemType Directory -Force $portraitDir | Out-Null
-    $args = @("-humankerbals-test", "-humankerbals-load", "`"$Save`"", "-humankerbals-portraits", "`"$portraitDir`"")
+    $args = @("-humblespaceprogram-test", "-humblespaceprogram-load", "`"$Save`"", "-humblespaceprogram-portraits", "`"$portraitDir`"")
     if ($TimeoutMinutes -lt 12) { $TimeoutMinutes = 12 }
     if ($MissionControl) {
         if (Test-Path $mcDir) { Remove-Item $mcDir -Recurse -Force }
         New-Item -ItemType Directory -Force $mcDir | Out-Null
-        $args += @("-humankerbals-missioncontrol", "`"$mcDir`"")
+        $args += @("-humblespaceprogram-missioncontrol", "`"$mcDir`"")
         if ($TimeoutMinutes -lt 15) { $TimeoutMinutes = 15 }
     }
     Write-Host "Test mode: loading $Save"
 }
 elseif ($AudioTest) {
-    $args = @("-humankerbals-test", "-humankerbals-audiotest")
+    $args = @("-humblespaceprogram-test", "-humblespaceprogram-audiotest")
     if ($TimeoutMinutes -lt 8) { $TimeoutMinutes = 8 }
     Write-Host "Audio test mode"
 }
@@ -60,7 +60,7 @@ else {
 }
 Write-Host "Started KSP2 (pid $($proc.Id)); watching logs for up to $TimeoutMinutes minutes..."
 
-$patterns = "Registered plugin: HumanKerbals|\[HumanKerbals|HumanKerbals\.dll|Harmony|error|Error|Exception|Found Space Warp plugin at|Loading addressables for Human|ReSkin|ReParent|failed to find|Kerbal3DModel|AttachToNamedParent|Portrait|AUDIO:|oundbank|Wwise"
+$patterns = "Registered plugin: HumbleSpaceProgram|\[HumbleSpaceProgram|HumbleSpaceProgram\.dll|Harmony|error|Error|Exception|Found Space Warp plugin at|Loading addressables for Human|ReSkin|ReParent|failed to find|Kerbal3DModel|AttachToNamedParent|Portrait|AUDIO:|oundbank|Wwise"
 $deadline = $start.AddMinutes($TimeoutMinutes)
 $log = $null
 $seenRegistered = $false
@@ -72,16 +72,16 @@ while ((Get-Date) -lt $deadline) {
     $log = Get-ChildItem -Path $ksp -Filter "Ksp2*.log" | Where-Object { $_.LastWriteTime -gt $start } | Sort-Object LastWriteTime -Descending | Select-Object -First 1
     if ($log) {
         $text = Get-Content $log.FullName -Raw -ErrorAction SilentlyContinue
-        if ($text -match "Registered plugin: HumanKerbals") { $seenRegistered = $true }
-        if ($text -match "Post-initialization for plugin Human Kerbals completed|\[HumanKerbals\] Active:") { $seenPostInit = $true }
-        if ($text -match "\[HumanKerbals\] TEST: done") { $seenTestDone = $true }
+        if ($text -match "Registered plugin: HumbleSpaceProgram") { $seenRegistered = $true }
+        if ($text -match "Post-initialization for plugin Humble Space Program completed|\[HumbleSpaceProgram\] Active:") { $seenPostInit = $true }
+        if ($text -match "\[HumbleSpaceProgram\] TEST: done") { $seenTestDone = $true }
         if (-not $TestLoad -and -not $AudioTest) {
             if ($seenPostInit -and -not $settleUntil) { $settleUntil = (Get-Date).AddSeconds(15) }
             if ($settleUntil -and (Get-Date) -gt $settleUntil) { break }
         }
         elseif ($seenTestDone -and -not $settleUntil) { $settleUntil = (Get-Date).AddSeconds(10) }
         if ($settleUntil -and (Get-Date) -gt $settleUntil) { break }
-        if ($text -match "Initialization for plugin Human Kerbals.*failed") { break }
+        if ($text -match "Initialization for plugin Humble Space Program.*failed") { break }
     }
     if ($proc.HasExited) { Write-Host "Game exited with code $($proc.ExitCode)"; break }
 }
@@ -109,6 +109,6 @@ if ($MissionControl) {
     Write-Host "Mission Control screenshots: $($shots.Count) -> $mcDir"
     $shots | ForEach-Object { Write-Host "  $($_.Name) ($([int]($_.Length/1KB)) KB)" }
 }
-if ($seenRegistered -and $seenPostInit) { Write-Host "RESULT: HumanKerbals registered and post-initialized." }
-elseif ($seenRegistered) { Write-Host "RESULT: HumanKerbals registered but post-initialization was not seen." }
-else { Write-Host "RESULT: HumanKerbals NOT registered." }
+if ($seenRegistered -and $seenPostInit) { Write-Host "RESULT: HumbleSpaceProgram registered and post-initialized." }
+elseif ($seenRegistered) { Write-Host "RESULT: HumbleSpaceProgram registered but post-initialization was not seen." }
+else { Write-Host "RESULT: HumbleSpaceProgram NOT registered." }

@@ -1,5 +1,5 @@
 # Run a static editor method headless in the mod's Unity project and show the log tail.
-# Usage: powershell -File tools\unity_batch.ps1 -Method HumanKerbalsBatch.SetupMod [-Editor <path to Unity.exe>]
+# Usage: powershell -File tools\unity_batch.ps1 -Method HumbleSpaceProgramBatch.SetupMod [-Editor <path to Unity.exe>]
 param(
     [Parameter(Mandatory = $true)] [string] $Method,
     [string] $Editor = "",

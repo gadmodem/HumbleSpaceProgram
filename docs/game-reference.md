@@ -133,7 +133,7 @@ the stock bone transforms exactly:
 - give mesh objects under the armature `matrix_world = A` with their data transformed by `A^-1`;
 - for prefabs attached by `attachToName` (helmet, hair), export the mesh alone with
   `matrix_world = A @ bone.matrix_local.inverted()` so Unity gets the bone-local placement;
-- Unity adds a file root above Blender's armature null; `HumanKerbalsBatch.ImportModels` flattens the
+- Unity adds a file root above Blender's armature null; `HumbleSpaceProgramBatch.ImportModels` flattens the
   null so bones and meshes sit directly under the `body_*` root like the stock prefabs.
 
 `tools/blender_build_rig.py` and `tools/blender_make_human.py` implement this; `compare_rig.py`

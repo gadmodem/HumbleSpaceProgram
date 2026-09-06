@@ -25,7 +25,7 @@ All scripts locate the game through `ksp2paths.py` (Steam default path, or set `
 | `wwise_scan_refs.py <aaDir> <out.json> <maxBytes>` | Scan bundles for Wwise object references (event name to ID) |
 | `wwise_bank_write.py <spec.json> <out.bnk>` | Write a Wwise 2021.1 (format 140) soundbank with embedded PCM clips, one Sound + Play action + Event per clip, no authoring tool needed |
 | `vo_transcribe.py [workdir]` | Decode the English narration `.wem` files (vgmstream) and transcribe them with word timestamps (faster-whisper, CPU) |
-| `vo_gerbal.py <events|transcribe|edit|bank|all> [--verify]` | Narration pipeline: find every spoken "Kerbal", re-cut the /k/ into a /g/, generate `HumanKerbals_narration.bnk` and `narration_remap.json` |
+| `vo_gerbal.py <events|transcribe|edit|bank|all> [--verify]` | Narration pipeline: find every spoken "Kerbal", re-cut the /k/ into a /g/, generate `HumbleSpaceProgram_narration.bnk` and `narration_remap.json` |
 | `vgmstream/vgmstream-cli.exe` | Decodes `.wem` and `.bnk` media to WAV (`-m` prints metadata) |
 | `wwiser/wwiser.pyz` | Wwise bank parser (`-d xml` dump, `-g` per-event `.txtp` play lists) |
 
@@ -37,16 +37,16 @@ for FBX/anim export when retargeting (plan Phase 3b).
 | Script | Purpose |
 | --- | --- |
 | `sdk\redux-sdk-cli.exe` | Redux SDK Manager CLI (v0.4.2): `versions`, `create`, `setup --ksp2 <exe> <project>`, `projects` |
-| `unity_batch.ps1 -Method HumanKerbalsBatch.<SetupMod|BuildForPlayer|Deploy>` | Runs the Unity 6000.5.8f1 editor headless on `unity\`; logs land in `logs\unity_<method>.log` |
-| `verify_in_game.ps1` | Starts KSP2, waits for `Registered plugin: HumanKerbals` and the plugin's init lines, prints matching log lines, closes the game |
+| `unity_batch.ps1 -Method HumbleSpaceProgramBatch.<SetupMod|BuildForPlayer|Deploy>` | Runs the Unity 6000.5.8f1 editor headless on `unity\`; logs land in `logs\unity_<method>.log` |
+| `verify_in_game.ps1` | Starts KSP2, waits for `Registered plugin: HumbleSpaceProgram` and the plugin's init lines, prints matching log lines, closes the game |
 | `blender_build_rig.py` | Rebuilds the kerbal armature and places the stock reference meshes in `blender\kerbal_rig.blend` (frame conventions documented in the file) |
-| `blender_make_human.py` | Generates the stylised human parts on the rig (spacesuit, jumpsuit and lab-coat bodies, heads, eyes, helmet, hair), saves `blender\human_rig.blend`, exports the twelve part FBX files into `unity\Assets\HumanKerbals\Models` |
+| `blender_make_human.py` | Generates the stylised human parts on the rig (spacesuit, jumpsuit and lab-coat bodies, heads, eyes, helmet, hair), saves `blender\human_rig.blend`, exports the twelve part FBX files into `unity\Assets\HumbleSpaceProgram\Models` |
 | `blender_export_parts.py` | Generic exporter for hand-modelled parts (same naming contract) |
-| `compare_rig.py [model]` | Compares bones of an imported model (from `HumanKerbalsBatch.ImportModels`) against the stock rig; must print MATCH |
-| `unity_batch.ps1 -Method HumanKerbalsBatch.ImportModels` | Imports the FBX files, creates prefabs, registers addressable keys, dumps hierarchies |
+| `compare_rig.py [model]` | Compares bones of an imported model (from `HumbleSpaceProgramBatch.ImportModels`) against the stock rig; must print MATCH |
+| `unity_batch.ps1 -Method HumbleSpaceProgramBatch.ImportModels` | Imports the FBX files, creates prefabs, registers addressable keys, dumps hierarchies |
 | `verify_in_game.ps1 -TestLoad` | Launches the game in test mode: auto-loads the newest save, dumps every kerbal portrait PNG to `logs\portraits`, quits |
 | `verify_in_game.ps1 -MissionControl` | As `-TestLoad`, then enters Mission Control and saves three screenshots of the converted actor prefabs to `logs\missioncontrol` |
 | `verify_in_game.ps1 -AudioTest` | Launches the game, posts the remapped narration events from the main menu and prints the Wwise playing ids, durations and monitor errors (`AUDIO:` lines) |
 
-`BuildForPlayer` stages the mod into `<KSP2>\mods\__Testing\HumanKerbals`; `Deploy` writes
-`unity\Deploy\HumanKerbals.zip` for distribution.
+`BuildForPlayer` stages the mod into `<KSP2>\mods\__Testing\HumbleSpaceProgram`; `Deploy` writes
+`unity\Deploy\HumbleSpaceProgram.zip` for distribution.

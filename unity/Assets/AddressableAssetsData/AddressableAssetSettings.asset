@@ -92,12 +92,12 @@ MonoBehaviour:
         m_Value: 'ServerData/[BuildTarget]'
     - m_InheritedParent: 
       m_Id: f019ed8d1738df146808478ba5e8c54d
-      m_ProfileName: HumanKerbals
+      m_ProfileName: HumbleSpaceProgram
       m_Values:
       - m_Id: 0b7ffff995cbd444fae622430b6b24d7
         m_Value: <undefined>
       - m_Id: 80e92ed8b2c47874db9098beb4bfc625
-        m_Value: '{SpaceWarpPaths.HumanKerbals}/addressables/StandaloneWindows64'
+        m_Value: '{SpaceWarpPaths.HumbleSpaceProgram}/addressables/StandaloneWindows64'
       - m_Id: 8549345c6e0b6084f9d3ba67de527233
         m_Value: Library/com.unity.addressables/aa/Windows/StandaloneWindows64
       - m_Id: 89fa264828e84074f9675ea02496c906

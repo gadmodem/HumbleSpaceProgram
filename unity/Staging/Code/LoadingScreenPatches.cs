@@ -1,4 +1,4 @@
-// Replaces the pre-rendered KSP2 loading-screen illustrations with the Human Kerbals artwork.
+// Replaces the pre-rendered KSP2 loading-screen illustrations with the Humble Space Program artwork.
 //
 // The screen list in loadingscreens_assets_all.bundle is a TextAsset with one key for each KSC,
 // Mission Control, VAB, recovery, crash and tutorial context.  These pictures are not scenes and do
@@ -13,7 +13,7 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
-namespace HumanKerbals
+namespace HumbleSpaceProgram
 {
     internal static class HumanLoadingScreens
     {

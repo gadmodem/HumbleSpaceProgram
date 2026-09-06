@@ -1,6 +1,6 @@
-// Automated in-game test support (only active with -humankerbals-test on the command line).
+// Automated in-game test support (only active with -humblespaceprogram-test on the command line).
 //
-//   KSP2_x64.exe -humankerbals-test -humankerbals-load "<save.json>" -humankerbals-portraits "<dir>"
+//   KSP2_x64.exe -humblespaceprogram-test -humblespaceprogram-load "<save.json>" -humblespaceprogram-portraits "<dir>"
 //
 // Once the main menu is up the hook loads the given save through the game's SaveLoadManager. Loading
 // a campaign makes KerbalRosterManager build a Kerbal3DModel for every roster kerbal to shoot its
@@ -8,7 +8,7 @@
 // portrait is written as PNG to the portraits directory; after the roster is done (or a timeout) the
 // game quits so tools/verify_in_game.ps1 can collect the results.
 //
-//   KSP2_x64.exe -humankerbals-test -humankerbals-audiotest
+//   KSP2_x64.exe -humblespaceprogram-test -humblespaceprogram-audiotest
 //
 // Audio mode instead posts the first stock narration events that the mod remaps (see
 // AudioRemapPatches.cs) from the main menu and logs what Wwise does with them: the playing id (0 means
@@ -23,11 +23,11 @@ using KSP.Game;
 using KSP.Messages;
 using UnityEngine;
 
-namespace HumanKerbals
+namespace HumbleSpaceProgram
 {
     internal static class TestHooks
     {
-        public static bool Enabled => Array.IndexOf(Environment.GetCommandLineArgs(), "-humankerbals-test") >= 0;
+        public static bool Enabled => Array.IndexOf(Environment.GetCommandLineArgs(), "-humblespaceprogram-test") >= 0;
 
         private static string Arg(string name)
         {
@@ -36,11 +36,11 @@ namespace HumanKerbals
             return i >= 0 && i + 1 < args.Length ? args[i + 1].Trim('"') : null;
         }
 
-        public static IEnumerator Run(HumanKerbalsPlugin plugin)
+        public static IEnumerator Run(HumbleSpaceProgramPlugin plugin)
         {
             var log = plugin.SWLogger;
-            var savePath = Arg("-humankerbals-load");
-            var portraitDir = Arg("-humankerbals-portraits") ?? Path.Combine(plugin.SWMetadata.Folder.FullName, "..", "..", "HumanKerbals_portraits");
+            var savePath = Arg("-humblespaceprogram-load");
+            var portraitDir = Arg("-humblespaceprogram-portraits") ?? Path.Combine(plugin.SWMetadata.Folder.FullName, "..", "..", "HumbleSpaceProgram_portraits");
             Directory.CreateDirectory(portraitDir);
             log.LogInfo($"TEST: waiting for main menu (save: {savePath ?? "none"}, portraits: {portraitDir})");
 
@@ -57,7 +57,7 @@ namespace HumanKerbals
             }
             yield return new WaitForSeconds(3f);
 
-            if (Array.IndexOf(Environment.GetCommandLineArgs(), "-humankerbals-audiotest") >= 0)
+            if (Array.IndexOf(Environment.GetCommandLineArgs(), "-humblespaceprogram-audiotest") >= 0)
             {
                 yield return AudioTest(plugin);
                 log.LogInfo("TEST: done");
@@ -119,7 +119,7 @@ namespace HumanKerbals
             log.LogInfo($"TEST: {portraits} portraits written to {portraitDir}");
 
             // Optional: walk into Mission Control and photograph the pre-built actors after the swap.
-            var mcDir = Arg("-humankerbals-missioncontrol");
+            var mcDir = Arg("-humblespaceprogram-missioncontrol");
             if (!string.IsNullOrEmpty(mcDir))
             {
                 Directory.CreateDirectory(mcDir);
@@ -148,14 +148,14 @@ namespace HumanKerbals
             Application.Quit();
         }
 
-        private static IEnumerator AudioTest(HumanKerbalsPlugin plugin)
+        private static IEnumerator AudioTest(HumbleSpaceProgramPlugin plugin)
         {
             var log = plugin.SWLogger;
-            var narration = HumanKerbalsPlugin.Narration;
+            var narration = HumbleSpaceProgramPlugin.Narration;
             AkCallbackManager.SetMonitoringCallback(AkMonitorErrorLevel.ErrorLevel_All,
                 (code, level, playingId, gameObj, msg) => log.LogInfo($"AUDIO: wwise {level} {code}: {msg} (playing {playingId})"));
             var go = plugin.gameObject;
-            var registered = AkSoundEngine.RegisterGameObj(go, "HumanKerbalsAudioTest");
+            var registered = AkSoundEngine.RegisterGameObj(go, "HumbleSpaceProgramAudioTest");
             log.LogInfo($"AUDIO: RegisterGameObj -> {registered}; {AudioRemap.Count} remaps active " +
                         $"({AudioRemap.NarrationCount} narration), word rule {AudioRemap.RuleDescription}");
             if (narration == null || narration.Lines.Count == 0)

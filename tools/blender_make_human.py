@@ -1,7 +1,7 @@
 """Generate the Phase 1 stylized human parts on the kerbal rig and export them as FBX.
 
 Usage (headless, from the project root):
-    blender --background blender/kerbal_rig.blend --python tools/blender_make_human.py -- unity/Assets/HumanKerbals/Models blender/human_rig.blend
+    blender --background blender/kerbal_rig.blend --python tools/blender_make_human.py -- unity/Assets/HumbleSpaceProgram/Models blender/human_rig.blend
 
 Builds (all procedurally, no stock geometry is reused):
   * body_human_spacesuit_01  skinned suit: pelvis, torso, neck, arms, gloves, legs, boots + backpack under bone_kerbal_eva_root
@@ -24,7 +24,7 @@ import bmesh
 from mathutils import Matrix, Quaternion, Vector
 
 ARM_NAME = "kerbal_rig"
-DEFAULT_ARGS = ["unity/Assets/HumanKerbals/Models", "blender/human_rig.blend"]
+DEFAULT_ARGS = ["unity/Assets/HumbleSpaceProgram/Models", "blender/human_rig.blend"]
 
 # Frame conventions: see tools/blender_build_rig.py. Geometry is authored in the scene frame (Z-up,
 # character faces -Y); when a mesh is attached under the armature its data is moved into armature

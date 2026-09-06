@@ -31,7 +31,7 @@ using KSP.Game;
 using KSP.Modding.Variety;
 using UnityEngine;
 
-namespace HumanKerbals
+namespace HumbleSpaceProgram
 {
     [HarmonyPatch]
     internal static class VarietyPatches
@@ -44,7 +44,7 @@ namespace HumanKerbals
         [HarmonyPatch(typeof(KerbalVarietySystem), nameof(KerbalVarietySystem.GetVarietySubCategoryByRangeRule))]
         private static void GetVarietySubCategoryByRangeRule_Postfix(VarietyRangeRule rangeRule, ref IList __result)
         {
-            var data = HumanKerbalsPlugin.Data;
+            var data = HumbleSpaceProgramPlugin.Data;
             if (data == null) return;
 
             if (rangeRule.valueType == typeof(GameObject) &&
@@ -85,7 +85,7 @@ namespace HumanKerbals
         [HarmonyPatch(typeof(KerbalVarietySystem), nameof(KerbalVarietySystem.GetWeightedOptionsArrayByName))]
         private static void GetWeightedOptionsArrayByName_Postfix(string woaName, ref WeightedOptionsArray __result)
         {
-            var data = HumanKerbalsPlugin.Data;
+            var data = HumbleSpaceProgramPlugin.Data;
             if (data == null || !data.WeightedOptions.TryGetValue(woaName, out var table)) return;
             __result = HumanWeightedTable(woaName, table);
         }
@@ -99,7 +99,7 @@ namespace HumanKerbals
         [HarmonyPatch(typeof(KerbalVarietySystem), "PregenerateWeightedManifest")]
         private static void PregenerateWeightedManifest_Prefix(KerbalVarietySystem __instance, VarietyRangeRule rangeRule)
         {
-            var data = HumanKerbalsPlugin.Data;
+            var data = HumbleSpaceProgramPlugin.Data;
             if (data == null || rangeRule.subcategoryKey == null || !data.WeightedOptions.TryGetValue(rangeRule.subcategoryKey, out var table)) return;
             var dict = WeightedCategoriesRef(__instance);
             if (dict == null) return;
@@ -116,7 +116,7 @@ namespace HumanKerbals
         [HarmonyPatch(typeof(VarietyUtils), nameof(VarietyUtils.GenerateSurname))]
         private static bool GenerateSurname_Prefix(ref KerbalAttributes kerbalAttributes, ref bool __result)
         {
-            var data = HumanKerbalsPlugin.Data;
+            var data = HumbleSpaceProgramPlugin.Data;
             if (data == null || data.Surnames.Count == 0) return true; // fall through to stock "Kerman"
 
             var first = kerbalAttributes.GetAttribute("NAME")?.ToString() ?? string.Empty;
@@ -136,7 +136,7 @@ namespace HumanKerbals
         [HarmonyPatch(typeof(Kerbal3DModel), nameof(Kerbal3DModel.Build3DKerbal), new[] { typeof(KerbalAttributes) })]
         private static void Build3DKerbal_Prefix(KerbalAttributes kerbalAttributes)
         {
-            var data = HumanKerbalsPlugin.Data;
+            var data = HumbleSpaceProgramPlugin.Data;
             if (data == null || data.LegacyRemap.Count == 0 || kerbalAttributes.Attributes == null) return; // KerbalAttributes is a struct; its Attributes dictionary is shared by reference
 
             foreach (var key in kerbalAttributes.Attributes.Keys.ToList())
@@ -155,7 +155,7 @@ namespace HumanKerbals
         [HarmonyPatch(typeof(KerbalVarietySystem), nameof(KerbalVarietySystem.GenerateCustomKerbalAttributesFromRawData))]
         private static void GenerateCustomKerbalAttributesFromRawData_Prefix(Dictionary<string, object> rawCustomKerbalData)
         {
-            var data = HumanKerbalsPlugin.Data;
+            var data = HumbleSpaceProgramPlugin.Data;
             if (data == null || rawCustomKerbalData == null) return;
 
             // The raw dictionary is the inner object of e.g. Jebediah_Kerman.json; the outer key
