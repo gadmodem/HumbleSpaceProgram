@@ -74,19 +74,7 @@ namespace HumbleSpaceProgram
                 SWLogger.LogWarning("Human loading-screen image is missing; stock loading screens stay in use.");
             }
 
-            // The first-run orientation film and the small talking helper use pre-rendered video/sprites,
-            // so neither can pass through the live actor conversion path.  Keep each redirect opt-in on
-            // its own addressable asset: a partially built mod leaves the corresponding stock visual intact.
-            var hasHumanOrientationVideo = KeyExists(HumanGerbalOrientationVideo.VideoAddress);
-            if (hasHumanOrientationVideo)
-            {
-                HumanGerbalOrientationVideo.Enable();
-            }
-            else
-            {
-                SWLogger.LogWarning("Human Gerbal orientation video is missing; stock orientation film stays in use.");
-            }
-
+            // The orientation film is skipped. The talking helper still needs a human sprite sheet.
             var hasHumanTalkingLoop = KeyExists(HumanGerbalTalkingLoop.SpriteSheetAddress);
             if (hasHumanTalkingLoop)
             {
@@ -121,12 +109,16 @@ namespace HumbleSpaceProgram
                 SWLogger.LogInfo("Test mode enabled (-humblespaceprogram-test).");
                 StartCoroutine(TestHooks.Run(this));
             }
+            else if (StartupResume.Enabled)
+            {
+                StartCoroutine(StartupResume.Run(this));
+            }
             SWLogger.LogInfo($"Active: {Data.GameObjectCategories.Count} appearance categories, " +
                              $"{Data.WeightedOptions.Count} weighted tables, {Data.StringCategories.Count} name lists, " +
                              $"{AudioRemap.Count} audio remaps ({AudioRemap.NarrationCount} narration lines), " +
                              $"actor swap {(Data.ActorSwap.Enabled ? "on" : "off")}, " +
                              $"loading-screen swap {(hasHumanLoadingScreen ? "on" : "off")}, " +
-                             $"orientation-video swap {(hasHumanOrientationVideo ? "on" : "off")}, " +
+                             $"intro videos skipped, autosave resume {(StartupResume.Enabled ? "on" : "off")}, " +
                              $"talking-loop swap {(hasHumanTalkingLoop ? "on" : "off")}.");
         }
 

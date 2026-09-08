@@ -44,9 +44,15 @@ for FBX/anim export when retargeting (plan Phase 3b).
 | `blender_export_parts.py` | Generic exporter for hand-modelled parts (same naming contract) |
 | `compare_rig.py [model]` | Compares bones of an imported model (from `HumbleSpaceProgramBatch.ImportModels`) against the stock rig; must print MATCH |
 | `unity_batch.ps1 -Method HumbleSpaceProgramBatch.ImportModels` | Imports the FBX files, creates prefabs, registers addressable keys, dumps hierarchies |
+| `unity_batch.ps1 -Method HumbleSpaceProgramBatch.ValidateHumanSize` | Bakes resized body/head meshes and verifies adult height; writes `logs/human-size-validation.txt` |
 | `verify_in_game.ps1 -TestLoad` | Launches the game in test mode: auto-loads the newest save, dumps every kerbal portrait PNG to `logs\portraits`, quits |
 | `verify_in_game.ps1 -MissionControl` | As `-TestLoad`, then enters Mission Control and saves three screenshots of the converted actor prefabs to `logs\missioncontrol` |
 | `verify_in_game.ps1 -AudioTest` | Launches the game, posts the remapped narration events from the main menu and prints the Wwise playing ids, durations and monitor errors (`AUDIO:` lines) |
 
 `BuildForPlayer` stages the mod into `<KSP2>\mods\__Testing\HumbleSpaceProgram`; `Deploy` writes
 `unity\Deploy\HumbleSpaceProgram.zip` for distribution.
+
+Normal startup resumes the newest autosave and enters Mission Control. Launch with
+`-humblespaceprogram-startup-capture "<directory>"` to capture three screenshots after that normal
+startup completes, without enabling test mode or quitting the game. `-humblespaceprogram-menu`
+disables automatic resume for that launch.

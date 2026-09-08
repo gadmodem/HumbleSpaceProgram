@@ -19,8 +19,16 @@ Mission Control and the main-menu vignettes use pre-built kerbal actor prefabs t
 roster pipeline; since 2026-09-03 `Code/ActorPatches.cs` converts them at spawn (human lab-coat and
 jumpsuit placeholder bodies included). The stock `LoadingScreens` configuration is also redirected
 to the bundled human launch artwork, covering every KSC, Mission Control, VAB, recovery, crash, and
-tutorial loading-screen key. The first-run orientation film is redirected to a human-only Gerbal
-sequence while the existing narration remap supplies Gerbal terminology. Verify the room actors with `tools\verify_in_game.ps1 -MissionControl`,
+tutorial loading-screen key. Startup splash animations and the first-run orientation film are skipped.
+Normal launches load the most recently modified autosave (`Metadata.SavedGameType = Auto`) across
+single-player campaigns, then enter Mission Control. With no autosave, the main menu remains available;
+a failed load cancels the Mission Control transition. Pass `-humblespaceprogram-menu` to start at the
+menu explicitly. Existing automated test modes retain their own loading behavior.
+
+Room actors and EVA humans use adult proportions (standing height approximately 1.73 m), with the
+scale reapplied after animation so stock clips cannot reset it. IVA and portrait models use the same
+proportions scaled to fit their fixed seats and camera framing.
+Verify the room actors with `tools\verify_in_game.ps1 -MissionControl`,
 which saves screenshots to `logs\missioncontrol`:
 
 ![Mission Control with converted actors](docs/images/missioncontrol_actors.png)

@@ -291,6 +291,7 @@ namespace HumbleSpaceProgram
             {
                 var animator = rig.GetComponent<Animator>() ?? rig.GetComponentInParent<Animator>();
                 if (animator != null) animator.Rebind();
+                HumanSize.Apply(master);
                 log.LogInfo($"Actor {Path(rig)}: converted to human ({(female ? "female" : "male")}).");
             }
             return changed;

@@ -1,6 +1,5 @@
-// Replaces the pre-rendered orientation film and the small talking-character loop with
-// human Gerbal assets.  The stock video player continues to own playback, narration, subtitles,
-// controls, and close behavior; only its incoming visual asset is redirected.
+// Skips the orientation film and replaces the small talking-character loop with
+// human Gerbal assets. The skipped film fires the stock completion event so its dialog closes.
 
 using System;
 using System.Collections.Generic;
@@ -14,69 +13,6 @@ using UnityEngine.Video;
 
 namespace HumbleSpaceProgram
 {
-    internal static class HumanGerbalOrientationVideo
-    {
-        public const string VideoAddress = "human_gerbal_orientation_video";
-        private const string StockOrientationClipName = "tutorial_01_SpaceisthePlace_v13";
-
-        private static readonly FieldInfo VideoClipField =
-            AccessTools.Field(typeof(LocalizedVideoData), "m_videoClip");
-        private static AsyncOperationHandle<VideoClip> _videoHandle;
-        private static LocalizedVideoData _replacement;
-        private static bool _warned;
-
-        public static bool Enabled { get; private set; }
-
-        public static void Enable()
-        {
-            if (Enabled) return;
-            _videoHandle = Addressables.LoadAssetAsync<VideoClip>(VideoAddress);
-            Enabled = true;
-        }
-
-        private static bool TryGetReplacement(LocalizedVideoData source, out LocalizedVideoData replacement)
-        {
-            replacement = _replacement;
-            if (replacement != null) return true;
-            if (VideoClipField == null)
-            {
-                WarnOnce("Orientation video: m_videoClip field was not found; stock orientation film stays in use.");
-                return false;
-            }
-            if (!_videoHandle.IsValid()) return false;
-            if (!_videoHandle.IsDone) _videoHandle.WaitForCompletion();
-            if (_videoHandle.Status != AsyncOperationStatus.Succeeded || _videoHandle.Result == null)
-            {
-                WarnOnce("Orientation video: human Gerbal replacement could not be loaded; stock orientation film stays in use.");
-                return false;
-            }
-
-            // Cloning retains the stock video data's subtitle and Wwise event references.  The audio
-            // remapper can therefore supply the Gerbal narration without reimplementing this player.
-            _replacement = UnityEngine.Object.Instantiate(source);
-            _replacement.name = "HumanGerbalOrientationData";
-            VideoClipField.SetValue(_replacement, _videoHandle.Result);
-            replacement = _replacement;
-            HumbleSpaceProgramPlugin.Instance?.SWLogger.LogInfo(
-                $"Orientation video: {StockOrientationClipName} -> {_videoHandle.Result.name}.");
-            return true;
-        }
-
-        private static void WarnOnce(string message)
-        {
-            if (_warned) return;
-            _warned = true;
-            HumbleSpaceProgramPlugin.Instance?.SWLogger.LogWarning(message);
-        }
-
-        internal static void CaptureSourceAndReplace(ref LocalizedVideoData videoData)
-        {
-            if (!Enabled || videoData == null || videoData.VideoClip == null ||
-                !string.Equals(videoData.VideoClip.name, StockOrientationClipName, StringComparison.Ordinal)) return;
-            if (TryGetReplacement(videoData, out var replacement)) videoData = replacement;
-        }
-    }
-
     internal static class HumanGerbalTalkingLoop
     {
         public const string SpriteSheetAddress = "human_gerbal_intro_sheet";
@@ -170,9 +106,21 @@ namespace HumbleSpaceProgram
         }
 
         [HarmonyPrefix]
-        private static void Open_Prefix(ref LocalizedVideoData __0)
+        private static bool Open_Prefix(LocalizedVideoPlayer __instance, LocalizedVideoData __0)
         {
-            HumanGerbalOrientationVideo.CaptureSourceAndReplace(ref __0);
+            if (__0 == null || __0.VideoClip == null ||
+                __0.VideoClip.name != "tutorial_01_SpaceisthePlace_v13") return true;
+            // Complete on the next frame so the caller can finish opening the dialog and
+            // register its completion listener. Close fires the game's normal finished event.
+            HumbleSpaceProgramPlugin.Instance.StartCoroutine(Skip(__instance));
+            return false;
+        }
+
+        private static System.Collections.IEnumerator Skip(LocalizedVideoPlayer player)
+        {
+            yield return null;
+            if (player != null) player.Close();
+            HumbleSpaceProgramPlugin.Instance?.SWLogger.LogInfo("Startup: skipped orientation video.");
         }
     }
 

@@ -110,7 +110,12 @@ public static class HumbleSpaceProgramBatch
         RunPipeline("BuildForPlayer", mod =>
         {
             var settings = ThunderKit.Core.Data.ThunderKitSetting.GetOrCreateSettings<ThunderKit.Core.Data.ThunderKitSettings>();
-            var testingFolder = Path.Combine(settings.GamePath, "mods/__Testing");
+            var gameRoot = Path.GetFullPath(settings.GamePath).TrimEnd(Path.DirectorySeparatorChar);
+            var testingFolder = Path.GetFullPath(Path.Combine(gameRoot, "mods", "__Testing", ModId));
+            var expectedFolder = gameRoot + Path.DirectorySeparatorChar + "mods" + Path.DirectorySeparatorChar +
+                                 "__Testing" + Path.DirectorySeparatorChar + ModId;
+            if (!string.Equals(testingFolder, expectedFolder, StringComparison.OrdinalIgnoreCase))
+                throw new InvalidOperationException("Unexpected mod staging directory: " + testingFolder);
             if (Directory.Exists(testingFolder))
             {
                 Directory.Delete(testingFolder, true);
@@ -127,6 +132,50 @@ public static class HumbleSpaceProgramBatch
     public static void Deploy()
     {
         RunPipeline("Deploy", mod => KSP2UnityToolsManager.DeployMods(mod));
+    }
+
+    // Bake the actual skinned prefabs with the runtime correction to catch axis mistakes and
+    // detached heads without needing a running game or a graphics device.
+    public static void ValidateHumanSize()
+    {
+        try
+        {
+            var sizeType = AppDomain.CurrentDomain.GetAssemblies()
+                .Select(a => a.GetType("HumbleSpaceProgram.HumanSize")).First(t => t != null);
+            var apply = sizeType.GetMethod("Apply");
+            var report = new System.Text.StringBuilder();
+            var combined = new Bounds();
+            var first = true;
+            foreach (var part in new[] { "body_human_scientist_01", "head_human_m_01" })
+            {
+                var prefab = AssetDatabase.LoadAssetAtPath<GameObject>(PrefabsFolder + "/" + part + ".prefab");
+                var instance = UnityEngine.Object.Instantiate(prefab);
+                apply.Invoke(null, new object[] { FindDeep(instance.transform, "bone_kerbal_master_parent") });
+                foreach (var renderer in instance.GetComponentsInChildren<SkinnedMeshRenderer>())
+                {
+                    var mesh = new Mesh();
+                    renderer.BakeMesh(mesh);
+                    var bounds = new Bounds(renderer.transform.TransformPoint(mesh.vertices[0]), Vector3.zero);
+                    foreach (var vertex in mesh.vertices) bounds.Encapsulate(renderer.transform.TransformPoint(vertex));
+                    report.AppendLine($"{part}: min={bounds.min:F3}, max={bounds.max:F3}, size={bounds.size:F3}");
+                    if (first) { combined = bounds; first = false; }
+                    else combined.Encapsulate(bounds);
+                    UnityEngine.Object.DestroyImmediate(mesh);
+                }
+                UnityEngine.Object.DestroyImmediate(instance);
+            }
+            report.AppendLine($"Combined height: {combined.size.y:F3} m");
+            File.WriteAllText("../logs/human-size-validation.txt", report.ToString());
+            if (combined.size.y < 1.5f || combined.size.y > 2.0f)
+                throw new Exception("Human height out of adult range: " + combined.size.y);
+            Debug.Log("[HumbleSpaceProgramBatch] Human size validated: " + report);
+            Exit(0);
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("[HumbleSpaceProgramBatch] Human size validation failed: " + e);
+            Exit(1);
+        }
     }
 
     // ---- Models -> prefabs -> addressables ------------------------------------------------------
