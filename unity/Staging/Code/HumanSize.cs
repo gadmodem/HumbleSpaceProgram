@@ -58,12 +58,16 @@ namespace HumbleSpaceProgram
         [HarmonyPostfix]
         private static void Postfix(Kerbal3DModel __instance)
         {
+            // The photo booth's model prefab is flagged as EVA, but its camera is fixed at kerbal
+            // head height, so portraits need the framed size like IVA seats do.
+            var framed = !__instance.IsEVAKerbal ||
+                         __instance.GetComponentInParent<KerbalPhotoBooth>(true) != null;
             foreach (var master in __instance.GetComponentsInChildren<Transform>(true)
                          .Where(t => t.name == "bone_kerbal_master_parent" &&
                                      t.parent != null && t.parent.name.StartsWith("body_human_")))
             {
-                if (__instance.IsEVAKerbal) HumanSize.Apply(master);
-                else HumanSize.ApplyFramed(master);
+                if (framed) HumanSize.ApplyFramed(master);
+                else HumanSize.Apply(master);
             }
         }
     }
